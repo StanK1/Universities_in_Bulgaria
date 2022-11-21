@@ -1,0 +1,28 @@
+h1 {
+color:purple;
+font-size:19;
+}
+div.sofia {
+ position: relative;
+overflow: hidden;
+color: blue;
+position: center;
+	}
+div.plovdiv {
+position: relative;
+position: center;
+
+}
+
+div.banner_varna {
+  /* The image used */
+  background-image: url("img/varna_banner.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
