@@ -1,5 +1,5 @@
 h1 {
-color:purple;
+color:darkblue;
 font-size:19;
 }
 div.sofia {
@@ -13,13 +13,21 @@ position: relative;
 position: center;
 
 }
+div.main_links {
+display: inline-block;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+body, html {
+  height: 100%;
+}
 
-div.banner_varna {
+.bg_varna {
   /* The image used */
-  background-image: url("img/varna_banner.jpg");
+  background-image: url("img/varna_banner1.jpg");
 
   /* Full height */
-  height: 100%;
+  height: 20%;
 
   /* Center and scale the image nicely */
   background-position: center;
