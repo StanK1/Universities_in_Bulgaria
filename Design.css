@@ -13,11 +13,7 @@ position: relative;
 position: center;
 
 }
-div.main_links {
-display: inline-block;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
+
 body, html {
   height: 100%;
 }
@@ -33,4 +29,8 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+table, th, td {
+  border: 1px solid black;
+  border-color: #006600;
 }
