@@ -1,24 +1,95 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="img" href="img/icon/favicon1.png"> <!--Open source e-->
 		<title>Bulgarian University</title>
 		<link rel="stylesheet" href="Design.css">
 		
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
+  <script src="animations.js" type="js"></script>
 	</head>
 	<body>
 
-		<div class="header">
-			<h1>My Website</h1> <!--На мястото със заглавието да се добави бар който да сменя картинки-->
-			<p>Resize the browser window to see the effect.</p>
+		<div class="flex demo">
+
+			<div class="slideshow-container">
+
+				<div class="mySlides fade">
+				  <div class="numbertext">1 / 4</div>
+				  <img class="top" src="img/lego4_varna.jpg" width="1500px" height="281px"/>
+				  <div class="text"></div>
+				</div>
+				
+				<div class="mySlides fade">
+				  <div class="numbertext">2 / 4</div>
+				  <img class="top" src="img/lego4_gabrovo.jpg" width="1500px" height="281px"/>
+				  <div class="text"></div>
+				</div>
+				
+				<div class="mySlides fade">
+				  <div class="numbertext">3 / 4</div>
+				  <img class="bottom" src="img/Plovdiv.jpg" width="1500px" height="281px"/>
+				  <div class="text"></div>
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numbertext">4 / 4</div>
+					<img class="top" src="img/lego2.jpg" width="1500px" height="281px"/>
+					<div class="text"></div>
+				  </div>
+
+				  <script>
+					let slideIndex = 1;
+					showSlides(slideIndex);
+					
+					function plusSlides(n) {
+					  showSlides(slideIndex += n);
+					}
+					
+					function currentSlide(n) {
+					  showSlides(slideIndex = n);
+					}
+					
+					function showSlides(n) {
+					  let i;
+					  let slides = document.getElementsByClassName("mySlides");
+					  let dots = document.getElementsByClassName("dot");
+					  if (n > slides.length) {slideIndex = 1}    
+					  if (n < 1) {slideIndex = slides.length}
+					  for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";  
+					  }
+					  for (i = 0; i < dots.length; i++) {
+						dots[i].className = dots[i].className.replace(" active", "");
+					  }
+					  slides[slideIndex-1].style.display = "block";  
+					  dots[slideIndex-1].className += " active";
+					}
+					</script>
+					
+				<a class="prev" onclick="plusSlides(-1)">❮</a>
+				<a class="next" onclick="plusSlides(1)">❯</a>
+				
+				</div>
+				
+				<div style="text-align:center">
+				  <span class="dot" onclick="currentSlide(1)"></span> 
+				  <span class="dot" onclick="currentSlide(2)"></span> 
+				  <span class="dot" onclick="currentSlide(3)"></span> 
+				</div>
+				
+
+			<div id="cf4a">
+
+			  </div> <!--На мястото със заглавието да се добави бар който да сменя картинки-->
 		  </div>
 
 		<div class="topnav">
 	<ul>
 		<li><a href="index.html"><img width="40px" height="40" class="logo" src="img/icon/favicon1.png"></a></li>
 		<li><a href="#home">Home</a></li>
-		<li><a href="http://unichoice.bg/specialnosti/">Специялности по университети</a></li>
+		<li><a href="http://unichoice.bg/specialnosti/">Специалности по университети</a></li>
 		<li class="dropdown">
 		  <a href="javascript:void(0)" class="dropbtn">Градове</a>
 		  <div class="dropdown-content">
@@ -42,12 +113,10 @@
 					Четири от петте ВУЗ-ове с най-висок рейтинг са в столицата – Софийският университет „Св. Климент Охридски“ (СУ), Медицинският университет,
 					Техническият университет и Нов български университет. СУ е най-старото висше училище в страната. Основан на 1 октомври 1888 г., днес той има
 					16 факултета и 3 департамента, като в него се обучават над 20 хиляди студенти.</p>
-				
-					
 	</div>
-	
-	
-	  </div>
+</div>
+						
+					
 		<div class="flex two three-600 six-1200 demo"> <!--Да направя отделни страници за всеки един град-->
 			<h2><a href="/">Бургас</a></h2>
 			<h2><a href="/">Благоевград</a></h2>
