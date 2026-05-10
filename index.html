@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="bg">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="icon" type="img" href="img/icon/favicon1.png"> <!--Open source e-->
-		<title>Bulgarian University</title>
+		<link rel="icon" type="image/png" href="img/icon/favicon1.png">
+		<title data-i18n="title">Bulgarian University | Изграждаме дигитална инфраструктура</title>
 		<link rel="stylesheet" href="Design.css">
 		
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
   
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="https://allfont.net/allfont.css?fonts=roboto-thin" rel="stylesheet" type="text/css" />
-  <script src="animations.js" type="js" integrity="sha384-csa/j6v7egKPJLEKuQ0DDyS+TgW5vqNvmitlpji2QzaCD8wdpx7/lwJTAezuoqTT" crossorigin="anonymous"></script>
+
+  <script src="i18n.js" defer integrity="sha384-UBAW12iJ/b4HDFImV4mlfcUTcOgu3Md9ucvUkuYYtmOZAcpIcjlJKMqTOFIKJC+Q" crossorigin="anonymous"></script>
+  <script src="animations.js" defer integrity="sha384-DwQdrDcq58oGUuiXeWDghVAW1qf4phW1NDVmT3vK7XDOu+3CPdbRzpnVV7+ChHmM" crossorigin="anonymous"></script>
 	</head>
 	<body>
 
@@ -19,53 +22,24 @@
 
 				<div class="mySlides fade">
 
-				  <img class="top" src="img/lego4_varna.jpg"height="281px" width="1500px"/>
+				  <img class="top" src="img/lego4_varna.jpg" height="281" width="1500" alt="Varna Slide"/>
 				  <div class="text"></div>
 				</div>
 				
 				<div class="mySlides fade">
-				  <img class="top" src="img/lego4_gabrovo.jpg"height="281px" width="1500px"/>
+				  <img class="top" src="img/lego4_gabrovo.jpg" height="281" width="1500" alt="Gabrovo Slide"/>
 				  <div class="text"></div>
 				</div>
 				
 				<div class="mySlides fade">
-				  <img class="bottom" src="img/Plovdiv.jpg"height="281px" width="1500px"/>
+				  <img class="bottom" src="img/Plovdiv.jpg" height="281" width="1500" alt="Plovdiv Slide"/>
 				  <div class="text"></div>
 				</div>
 
 				<div class="mySlides fade">
-					<img class="top" src="img/lego2.jpg"height="281px" width="1500px"/>
+					<img class="top" src="img/lego2.jpg" height="281" width="1500" alt="Lego Slide"/>
 					<div class="text"></div>
 				  </div>
-
-				  <script>
-					let slideIndex = 1;
-					showSlides(slideIndex);
-					
-					function plusSlides(n) {
-					  showSlides(slideIndex += n);
-					}
-					
-					function currentSlide(n) {
-					  showSlides(slideIndex = n);
-					}
-					
-					function showSlides(n) {
-					  let i;
-					  let slides = document.getElementsByClassName("mySlides");
-					  let dots = document.getElementsByClassName("dot");
-					  if (n > slides.length) {slideIndex = 1}    
-					  if (n < 1) {slideIndex = slides.length}
-					  for (i = 0; i < slides.length; i++) {
-						slides[i].style.display = "none";  
-					  }
-					  for (i = 0; i < dots.length; i++) {
-						dots[i].className = dots[i].className.replace(" active", "");
-					  }
-					  slides[slideIndex-1].style.display = "block";  
-					  dots[slideIndex-1].className += " active";
-					}
-					</script>
 					
 				<a class="prev" href="javascript:void(0);" aria-label="Previous slide" title="Previous slide" onclick="plusSlides(-1)">❮</a>
 				<a class="next" href="javascript:void(0);" aria-label="Next slide" title="Next slide" onclick="plusSlides(1)">❯</a>
@@ -82,49 +56,86 @@
 
 		<div class="topnav">
 	<ul>
-		<li><a href="index.html" id="logo1"><img width="40px" height="40" class="logo" src="img/icon/favicon2.png"></a></li>
-		<li><a href="index.html">Home</a></li>
-		<li><a href="http://unichoice.bg/specialnosti/">Специалности по университети</a></li>
+		<li><a href="index.html" id="logo1"><img width="40" height="40" class="logo" src="img/icon/favicon2.png" alt="Logo"></a></li>
+		<li>
+			<a href="index.html">
+				<span class="lang-en">Home</span>
+				<span class="lang-bg">Начало</span>
+			</a>
+		</li>
+		<li>
+			<a href="http://unichoice.bg/specialnosti/">
+				<span class="lang-en">University Specialties</span>
+				<span class="lang-bg">Специалности по университети</span>
+			</a>
+		</li>
 		<li class="dropdown">
-		  <a href="javascript:void(0)" class="dropbtn">Градове</a>
+		  <a href="javascript:void(0)" class="dropbtn">
+			<span class="lang-en">Cities</span>
+			<span class="lang-bg">Градове</span>
+		  </a>
 		  <div class="dropdown-content">
-			<a href="sofia.html">София</a>
-			<a href="plovdiv.html">Пловдив</a>
-			<a href="varna.html">Варна</a>
-			</li>
-			<li><a href="baloobrazuvane.html">Калкулатор на бал</a></li>
-			<li><a href="https://github.com/StanK1">Конткакти</a></li>
+			<a href="sofia.html">
+				<span class="lang-en">Sofia</span>
+				<span class="lang-bg">София</span>
+			</a>
+			<a href="plovdiv.html">
+				<span class="lang-en">Plovdiv</span>
+				<span class="lang-bg">Пловдив</span>
+			</a>
+			<a href="varna.html">
+				<span class="lang-en">Varna</span>
+				<span class="lang-bg">Варна</span>
+			</a>
 		  </div>
-		  </ul>
-		</div>
+		</li>
+		<li>
+			<a href="baloobrazuvane.html">
+				<span class="lang-en">Score Calculator</span>
+				<span class="lang-bg">Калкулатор на бал</span>
+			</a>
+		</li>
+		<li>
+			<a href="https://github.com/StanK1">
+				<span class="lang-en">Contacts</span>
+				<span class="lang-bg">Контакти</span>
+			</a>
+		</li>
+	</ul>
+	<div class="lang-toggle-wrapper">
+		<button class="lang-toggle">
+			<span data-lang="en">EN</span> / <span data-lang="bg" class="active">BG</span>
+		</button>
+	</div>
+</div>
 
 <div class="flex three">
 <div class="box">
 	<div class="box_image"><a href="sofia.html"></a>
-		<img  src="img/lego2.jpg">
+		<img src="img/lego2.jpg" alt="Sofia Lego">
 	</div>
 	<div class="center">
 	</div>
-			<p style="font-size:60%; color: rgb(255, 255, 255);">В София се намират 22 от 52 акредитирани висши училища в България, в които се обучават над 100 хиляди студенти.
-				Четири от петте ВУЗ-ове с най-висок рейтинг са в столицата – Софийският университет „Св. Климент Охридски“ (СУ), Медицинският университет,
-				Техническият университет и Нов български университет. СУ е най-старото висше училище в страната. Основан на 1 октомври 1888 г., днес той има
-				16 факултета и 3 департамента, като в него се обучават над 20 хиляди студенти.</p>
+			<p style="color: rgb(255, 255, 255);">
+				<span class="lang-en">We engineer digital platforms. 22 out of 52 accredited higher education institutions in Bulgaria are located in Sofia, where over 100,000 students are trained. High performance architecture and custom code form the core of our educational structure, delivering maximum ROI for the students. Four of the top five universities are here.</span>
+				<span class="lang-bg">Изграждаме дигитална инфраструктура. В София се намират 22 от 52 акредитирани висши училища в България, в които се обучават над 100 хиляди студенти. Ръчно писан код и висока производителност формират ядрото на нашата образователна система, гарантирайки максимална възвръщаемост на инвестицията за Вашия бизнес и развитие. Четири от петте ВУЗ-ове с най-висок рейтинг са в столицата.</span>
+			</p>
 </div>
-</div> <!--https://www.sitepoint.com/css-box-shadow-animation-performance/-->
+</div>
 <div class="box-2">
 	<div class="center">
 	
-			<p style="font-size:60%; color: white;">В София се намират 22 от 52 акредитирани висши училища в България, в които се обучават над 100 хиляди студенти.
-				Четири от петте ВУЗ-ове с най-висок рейтинг са в столицата – Софийският университет „Св. Климент Охридски“ (СУ), Медицинският университет,
-				Техническият университет и Нов български университет. СУ е най-старото висше училище в страната. Основан на 1 октомври 1888 г., днес той има
-				16 факултета и 3 департамента, като в него се обучават над 20 хиляди студенти.</p>
-			</div>
+			<p style="color: white;">
+				<span class="lang-en">We engineer digital platforms. 22 out of 52 accredited higher education institutions in Bulgaria are located in Sofia, where over 100,000 students are trained. High performance architecture and custom code form the core of our educational structure, delivering maximum ROI for the students. Four of the top five universities are here.</span>
+				<span class="lang-bg">Изграждаме дигитална инфраструктура. В София се намират 22 от 52 акредитирани висши училища в България, в които се обучават над 100 хиляди студенти. Ръчно писан код и висока производителност формират ядрото на нашата образователна система, гарантирайки максимална възвръщаемост на инвестицията за Вашия бизнес и развитие. Четири от петте ВУЗ-ове с най-висок рейтинг са в столицата.</span>
+			</p>
+	</div>
 </div>
 	
 
 						
 					
-		<div class="flex two three-600 six-1200 demo"> <!--Да направя отделни страници за всеки един град-->
+		<div class="flex two three-600 six-1200 demo">
 			<h2><a href="/">Бургас</a></h2>
 			<h2><a href="/">Благоевград</a></h2>
 			<h2><a href="/">Велико Търново</a></h2>
@@ -150,6 +161,4 @@
 		</div>
 
 	</body>
-
-
- </html>
+</html>
