@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="bg">
   <head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="icon" type="img" href="img/icon/favicon1.png"> <!--Open source e-->
-		<title>Bulgarian University</title>
+		<link rel="icon" type="image/png" href="img/icon/favicon1.png">
+		<title data-i18n="title">Bulgarian University | Изграждаме дигитална инфраструктура</title>
 		<link rel="stylesheet" href="Design.css">
 		
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
   
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="https://allfont.net/allfont.css?fonts=roboto-thin" rel="stylesheet" type="text/css" />
-  <script src="animations.js" type="js" integrity="sha384-csa/j6v7egKPJLEKuQ0DDyS+TgW5vqNvmitlpji2QzaCD8wdpx7/lwJTAezuoqTT" crossorigin="anonymous"></script>
+
+  <script src="i18n.js" defer integrity="sha384-UBAW12iJ/b4HDFImV4mlfcUTcOgu3Md9ucvUkuYYtmOZAcpIcjlJKMqTOFIKJC+Q" crossorigin="anonymous"></script>
+  <script src="animations.js" defer integrity="sha384-DwQdrDcq58oGUuiXeWDghVAW1qf4phW1NDVmT3vK7XDOu+3CPdbRzpnVV7+ChHmM" crossorigin="anonymous"></script>
 	</head>
 	<body>
     <div class="flex demo">
@@ -18,53 +21,24 @@
 
 				<div class="mySlides fade">
 
-				  <img class="top" src="img/lego4_varna.jpg"height="281px" width="1500px"/>
+				  <img class="top" src="img/lego4_varna.jpg" height="281" width="1500" alt="Varna Slide"/>
 				  <div class="text"></div>
 				</div>
 				
 				<div class="mySlides fade">
-				  <img class="top" src="img/lego4_gabrovo.jpg"height="281px" width="1500px"/>
+				  <img class="top" src="img/lego4_gabrovo.jpg" height="281" width="1500" alt="Gabrovo Slide"/>
 				  <div class="text"></div>
 				</div>
 				
 				<div class="mySlides fade">
-				  <img class="bottom" src="img/Plovdiv.jpg"height="281px" width="1500px"/>
+				  <img class="bottom" src="img/Plovdiv.jpg" height="281" width="1500" alt="Plovdiv Slide"/>
 				  <div class="text"></div>
 				</div>
 
 				<div class="mySlides fade">
-					<img class="top" src="img/lego2.jpg"height="281px" width="1500px"/>
+					<img class="top" src="img/lego2.jpg" height="281" width="1500" alt="Lego Slide"/>
 					<div class="text"></div>
 				  </div>
-
-				  <script>
-					let slideIndex = 1;
-					showSlides(slideIndex);
-					
-					function plusSlides(n) {
-					  showSlides(slideIndex += n);
-					}
-					
-					function currentSlide(n) {
-					  showSlides(slideIndex = n);
-					}
-					
-					function showSlides(n) {
-					  let i;
-					  let slides = document.getElementsByClassName("mySlides");
-					  let dots = document.getElementsByClassName("dot");
-					  if (n > slides.length) {slideIndex = 1}    
-					  if (n < 1) {slideIndex = slides.length}
-					  for (i = 0; i < slides.length; i++) {
-						slides[i].style.display = "none";  
-					  }
-					  for (i = 0; i < dots.length; i++) {
-						dots[i].className = dots[i].className.replace(" active", "");
-					  }
-					  slides[slideIndex-1].style.display = "block";  
-					  dots[slideIndex-1].className += " active";
-					}
-					</script>
 					
 				<a class="prev" href="javascript:void(0);" aria-label="Previous slide" title="Previous slide" onclick="plusSlides(-1)">❮</a>
 				<a class="next" href="javascript:void(0);" aria-label="Next slide" title="Next slide" onclick="plusSlides(1)">❯</a>
@@ -81,83 +55,174 @@
 
 		<div class="topnav">
 	<ul>
-		<li><a href="index.html" id="logo1"><img width="40px" height="40" class="logo" src="img/icon/favicon2.png"></a></li>
-		<li><a href="index.html">Home</a></li>
-		<li><a href="http://unichoice.bg/specialnosti/">Специалности по университети</a></li>
+		<li><a href="index.html" id="logo1"><img width="40" height="40" class="logo" src="img/icon/favicon2.png" alt="Logo"></a></li>
+		<li>
+			<a href="index.html">
+				<span class="lang-en">Home</span>
+				<span class="lang-bg">Начало</span>
+			</a>
+		</li>
+		<li>
+			<a href="http://unichoice.bg/specialnosti/">
+				<span class="lang-en">University Specialties</span>
+				<span class="lang-bg">Специалности по университети</span>
+			</a>
+		</li>
 		<li class="dropdown">
-		  <a href="javascript:void(0)" class="dropbtn">Градове</a>
+		  <a href="javascript:void(0)" class="dropbtn">
+			<span class="lang-en">Cities</span>
+			<span class="lang-bg">Градове</span>
+		  </a>
 		  <div class="dropdown-content">
-			<a href="sofia.html">София</a>
-			<a href="plovdiv.html">Пловдив</a>
-			<a href="varna.html">Варна</a>
-			</li>
-			<li><a href="baloobrazuvane.html">Калкулатор на бал</a></li>
-			<li><a href="https://github.com/StanK1">Конткакти</a></li>
+			<a href="sofia.html">
+				<span class="lang-en">Sofia</span>
+				<span class="lang-bg">София</span>
+			</a>
+			<a href="plovdiv.html">
+				<span class="lang-en">Plovdiv</span>
+				<span class="lang-bg">Пловдив</span>
+			</a>
+			<a href="varna.html">
+				<span class="lang-en">Varna</span>
+				<span class="lang-bg">Варна</span>
+			</a>
 		  </div>
-		  </ul>
-		</div>
-	<h1 style="text-align:center;">Prom Formation</h1>
-		<p style="font-size:170%;">
-		<h1 possition:center>Sofia</h1>
-		 <table>
+		</li>
+		<li>
+			<a href="baloobrazuvane.html">
+				<span class="lang-en">Score Calculator</span>
+				<span class="lang-bg">Калкулатор на бал</span>
+			</a>
+		</li>
+		<li>
+			<a href="https://github.com/StanK1">
+				<span class="lang-en">Contacts</span>
+				<span class="lang-bg">Контакти</span>
+			</a>
+		</li>
+	</ul>
+	<div class="lang-toggle-wrapper">
+		<button class="lang-toggle">
+			<span data-lang="en">EN</span> / <span data-lang="bg" class="active">BG</span>
+		</button>
+	</div>
+</div>
+	<h1 style="text-align:center; color: white;">
+		<span class="lang-en">Score Formation</span>
+		<span class="lang-bg">Формиране на бал</span>
+	</h1>
+	<div style="color: white; padding: 0 20px;">
+		<h2 style="text-align:center;">
+			<span class="lang-en">Sofia</span>
+			<span class="lang-bg">София</span>
+		</h2>
+		 <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
   <tr>
-    <th>Специалности</th>
-    <th>Лесотехнически университет</th>
-    <th>Медицински университет – София</th>
-    <th>Минно-геоложки университет</th>
-    <th>Нов български университет</th>
-    <th>Софийски университет</th>
-    <th>Технически университет София</th>
-    <th>Университет за национално и световно стопанство</th>
-    <th>Университет по архитектура, строителство и геодезия</th>
-    <th>Университет по библиотекознание и информационни технологии</th>
-    <th>НАТФИЗ-София</th>
+    <th style="border: 1px solid white; padding: 8px;">
+		<span class="lang-en">Specialties</span>
+		<span class="lang-bg">Специалности</span>
+	</th>
+    <th style="border: 1px solid white; padding: 8px;">
+		<span class="lang-en">University of Forestry</span>
+		<span class="lang-bg">Лесотехнически университет</span>
+	</th>
+    <th style="border: 1px solid white; padding: 8px;">
+		<span class="lang-en">Medical University - Sofia</span>
+		<span class="lang-bg">Медицински университет – София</span>
+	</th>
+    <th style="border: 1px solid white; padding: 8px;">
+		<span class="lang-en">University of Mining and Geology</span>
+		<span class="lang-bg">Минно-геоложки университет</span>
+	</th>
+    <th style="border: 1px solid white; padding: 8px;">
+		<span class="lang-en">New Bulgarian University</span>
+		<span class="lang-bg">Нов български университет</span>
+	</th>
+    <th style="border: 1px solid white; padding: 8px;">
+		<span class="lang-en">Sofia University</span>
+		<span class="lang-bg">Софийски университет</span>
+	</th>
+    <th style="border: 1px solid white; padding: 8px;">
+		<span class="lang-en">Technical University Sofia</span>
+		<span class="lang-bg">Технически университет София</span>
+	</th>
+    <th style="border: 1px solid white; padding: 8px;">
+		<span class="lang-en">UNWE</span>
+		<span class="lang-bg">Университет за национално и световно стопанство</span>
+	</th>
+    <th style="border: 1px solid white; padding: 8px;">
+		<span class="lang-en">UACEG</span>
+		<span class="lang-bg">Университет по архитектура, строителство и геодезия</span>
+	</th>
+    <th style="border: 1px solid white; padding: 8px;">
+		<span class="lang-en">ULSIT</span>
+		<span class="lang-bg">Университет по библиотекознание и информационни технологии</span>
+	</th>
+    <th style="border: 1px solid white; padding: 8px;">
+		<span class="lang-en">NATFA Sofia</span>
+		<span class="lang-bg">НАТФИЗ-София</span>
+	</th>
   </tr>
   <tr>
-    <td>Философски факултет</td>
-    <td>Исторически факултет</td>
-    <td>Факултет по педагогика</td>
-    <td>Факултет по славянски филологии</td>
-    <td>Факултет по класически и нови филологии</td>
-    <td>Факултет по математика и информатика</td>
-    <td>Физически факултет</td>
-    <td>Факултет по химия и фармация</td>
-    <td>Биологически факултет</td>
-    <td>Геолого-географски факултет</td>
-    <td>Юридически факултет </td>
-    <td>Факултет по журналистика и масова комуникация</td>
-    <td>Стопански факултет</td>
-    <td>Богословски факултет</td>
-    <td>Факултет по науки за образованието и изкуства</td>
-    <td>Медицински факултет</td>
+    <td style="border: 1px solid white; padding: 8px;">
+        <span class="lang-en">Faculty of Philosophy</span>
+        <span class="lang-bg">Философски факултет</span>
+    </td>
+    <td style="border: 1px solid white; padding: 8px;">
+        <span class="lang-en">Faculty of History</span>
+        <span class="lang-bg">Исторически факултет</span>
+    </td>
+    <td style="border: 1px solid white; padding: 8px;">
+        <span class="lang-en">Faculty of Pedagogy</span>
+        <span class="lang-bg">Факултет по педагогика</span>
+    </td>
+    <td style="border: 1px solid white; padding: 8px;">
+        <span class="lang-en">Faculty of Slavic Studies</span>
+        <span class="lang-bg">Факултет по славянски филологии</span>
+    </td>
+    <td style="border: 1px solid white; padding: 8px;">
+        <span class="lang-en">Faculty of Classical and Modern Philology</span>
+        <span class="lang-bg">Факултет по класически и нови филологии</span>
+    </td>
+    <td style="border: 1px solid white; padding: 8px;">
+        <span class="lang-en">Faculty of Mathematics and Informatics</span>
+        <span class="lang-bg">Факултет по математика и информатика</span>
+    </td>
+    <td style="border: 1px solid white; padding: 8px;">
+        <span class="lang-en">Faculty of Physics</span>
+        <span class="lang-bg">Физически факултет</span>
+    </td>
+    <td style="border: 1px solid white; padding: 8px;">
+        <span class="lang-en">Faculty of Chemistry and Pharmacy</span>
+        <span class="lang-bg">Факултет по химия и фармация</span>
+    </td>
+    <td style="border: 1px solid white; padding: 8px;">
+        <span class="lang-en">Faculty of Biology</span>
+        <span class="lang-bg">Биологически факултет</span>
+    </td>
+    <td style="border: 1px solid white; padding: 8px;">
+        <span class="lang-en">Faculty of Geology and Geography</span>
+        <span class="lang-bg">Геолого-географски факултет</span>
+    </td>
+    <td style="border: 1px solid white; padding: 8px;">
+        <span class="lang-en">Faculty of Law</span>
+        <span class="lang-bg">Юридически факултет</span>
+    </td>
   </tr>
   <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
+    <td style="border: 1px solid white; padding: 8px;">Centro comercial Moctezuma</td>
+    <td style="border: 1px solid white; padding: 8px;">Francisco Chang</td>
+    <td style="border: 1px solid white; padding: 8px;">Mexico</td>
+	<td style="border: 1px solid white; padding: 8px;"></td>
+	<td style="border: 1px solid white; padding: 8px;"></td>
+	<td style="border: 1px solid white; padding: 8px;"></td>
+	<td style="border: 1px solid white; padding: 8px;"></td>
+	<td style="border: 1px solid white; padding: 8px;"></td>
+	<td style="border: 1px solid white; padding: 8px;"></td>
+	<td style="border: 1px solid white; padding: 8px;"></td>
+	<td style="border: 1px solid white; padding: 8px;"></td>
   </tr>
-  
-  <tr>
-  </tr>
-  
-    <tr>
-  </tr>
-    <tr>
-  </tr>
-    <tr>
-  </tr>
-    <tr>
-  </tr>
-    <tr>
-  </tr>
-    <tr>
-  </tr>
-    <tr>
-  </tr>
-    <tr>
-  </tr>
-</table> </p>
+</table>
+	</div>
 	</body>
-
-
- </html>
+</html>

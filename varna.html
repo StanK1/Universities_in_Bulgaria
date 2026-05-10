@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="bg">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="icon" type="img" href="img/icon/favicon1.png"> <!--Open source e-->
-		<title>Bulgarian University</title>
+		<link rel="icon" type="image/png" href="img/icon/favicon1.png">
+		<title data-i18n="title">Bulgarian University | Изграждаме дигитална инфраструктура</title>
 		<link rel="stylesheet" href="Design.css">
 		
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
   
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="https://allfont.net/allfont.css?fonts=roboto-thin" rel="stylesheet" type="text/css" />
-  <script src="animations.js" type="js" integrity="sha384-csa/j6v7egKPJLEKuQ0DDyS+TgW5vqNvmitlpji2QzaCD8wdpx7/lwJTAezuoqTT" crossorigin="anonymous"></script>
+
+  <script src="i18n.js" defer integrity="sha384-UBAW12iJ/b4HDFImV4mlfcUTcOgu3Md9ucvUkuYYtmOZAcpIcjlJKMqTOFIKJC+Q" crossorigin="anonymous"></script>
+  <script src="animations.js" defer integrity="sha384-DwQdrDcq58oGUuiXeWDghVAW1qf4phW1NDVmT3vK7XDOu+3CPdbRzpnVV7+ChHmM" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<div class="flex demo">
@@ -18,53 +21,24 @@
 
 				<div class="mySlides fade">
 
-				  <img class="top" src="img/lego4_varna.jpg"height="281px" width="1500px"/>
+				  <img class="top" src="img/lego4_varna.jpg" height="281" width="1500" alt="Varna Slide"/>
 				  <div class="text"></div>
 				</div>
 				
 				<div class="mySlides fade">
-				  <img class="top" src="img/lego4_gabrovo.jpg"height="281px" width="1500px"/>
+				  <img class="top" src="img/lego4_gabrovo.jpg" height="281" width="1500" alt="Gabrovo Slide"/>
 				  <div class="text"></div>
 				</div>
 				
 				<div class="mySlides fade">
-				  <img class="bottom" src="img/Plovdiv.jpg"height="281px" width="1500px"/>
+				  <img class="bottom" src="img/Plovdiv.jpg" height="281" width="1500" alt="Plovdiv Slide"/>
 				  <div class="text"></div>
 				</div>
 
 				<div class="mySlides fade">
-					<img class="top" src="img/lego2.jpg"height="281px" width="1500px"/>
+					<img class="top" src="img/lego2.jpg" height="281" width="1500" alt="Lego Slide"/>
 					<div class="text"></div>
 				  </div>
-
-				  <script>
-					let slideIndex = 1;
-					showSlides(slideIndex);
-					
-					function plusSlides(n) {
-					  showSlides(slideIndex += n);
-					}
-					
-					function currentSlide(n) {
-					  showSlides(slideIndex = n);
-					}
-					
-					function showSlides(n) {
-					  let i;
-					  let slides = document.getElementsByClassName("mySlides");
-					  let dots = document.getElementsByClassName("dot");
-					  if (n > slides.length) {slideIndex = 1}    
-					  if (n < 1) {slideIndex = slides.length}
-					  for (i = 0; i < slides.length; i++) {
-						slides[i].style.display = "none";  
-					  }
-					  for (i = 0; i < dots.length; i++) {
-						dots[i].className = dots[i].className.replace(" active", "");
-					  }
-					  slides[slideIndex-1].style.display = "block";  
-					  dots[slideIndex-1].className += " active";
-					}
-					</script>
 					
 				<a class="prev" href="javascript:void(0);" aria-label="Previous slide" title="Previous slide" onclick="plusSlides(-1)">❮</a>
 				<a class="next" href="javascript:void(0);" aria-label="Next slide" title="Next slide" onclick="plusSlides(1)">❯</a>
@@ -81,29 +55,70 @@
 
 		<div class="topnav">
 	<ul>
-		<li><a href="index.html" id="logo1"><img width="40px" height="40" class="logo" src="img/icon/favicon2.png"></a></li>
-		<li><a href="index.html">Home</a></li>
-		<li><a href="http://unichoice.bg/specialnosti/">Специалности по университети</a></li>
+		<li><a href="index.html" id="logo1"><img width="40" height="40" class="logo" src="img/icon/favicon2.png" alt="Logo"></a></li>
+		<li>
+			<a href="index.html">
+				<span class="lang-en">Home</span>
+				<span class="lang-bg">Начало</span>
+			</a>
+		</li>
+		<li>
+			<a href="http://unichoice.bg/specialnosti/">
+				<span class="lang-en">University Specialties</span>
+				<span class="lang-bg">Специалности по университети</span>
+			</a>
+		</li>
 		<li class="dropdown">
-		  <a href="javascript:void(0)" class="dropbtn">Градове</a>
+		  <a href="javascript:void(0)" class="dropbtn">
+			<span class="lang-en">Cities</span>
+			<span class="lang-bg">Градове</span>
+		  </a>
 		  <div class="dropdown-content">
-			<a href="sofia.html">София</a>
-			<a href="plovdiv.html">Пловдив</a>
-			<a href="varna.html">Варна</a>
-			</li>
-			<li><a href="baloobrazuvane.html">Калкулатор на бал</a></li>
-			<li><a href="https://github.com/StanK1">Конткакти</a></li>
+			<a href="sofia.html">
+				<span class="lang-en">Sofia</span>
+				<span class="lang-bg">София</span>
+			</a>
+			<a href="plovdiv.html">
+				<span class="lang-en">Plovdiv</span>
+				<span class="lang-bg">Пловдив</span>
+			</a>
+			<a href="varna.html">
+				<span class="lang-en">Varna</span>
+				<span class="lang-bg">Варна</span>
+			</a>
 		  </div>
-		  </ul>
+		</li>
+		<li>
+			<a href="baloobrazuvane.html">
+				<span class="lang-en">Score Calculator</span>
+				<span class="lang-bg">Калкулатор на бал</span>
+			</a>
+		</li>
+		<li>
+			<a href="https://github.com/StanK1">
+				<span class="lang-en">Contacts</span>
+				<span class="lang-bg">Контакти</span>
+			</a>
+		</li>
+	</ul>
+	<div class="lang-toggle-wrapper">
+		<button class="lang-toggle">
+			<span data-lang="en">EN</span> / <span data-lang="bg" class="active">BG</span>
+		</button>
+	</div>
+</div>
+		<div class="bg_varna"></div>
+		<h1 style="text-align:center; color: white;">
+			<span class="lang-en">Varna</span>
+			<span class="lang-bg">Варна</span>
+		</h1>
+		<p style="color: white; padding: 0 20px;">
+			<span class="lang-en">We engineer high performance marine and economic technologies. Varna stands out as a critical academic node with eight higher education institutions, mentoring over 30,000 students. The first higher commercial school in Bulgaria was founded here in 1920. Now, with the Institute of Oceanology, Center for Hydro and Aerodynamics, and research in naval architecture, Varna's digital infrastructure produces unparalleled ROI.</span>
+			<span class="lang-bg">Изграждаме дигитална инфраструктура с фокус върху морски и икономически технологии. Варна е сред най-важните университетски центрове в страната с осем висши училища, в които се обучават над 30 000 студенти. Ръчно писан код и висока производителност се преплитат с изследванията в Института по океанология и Центъра по хидро и аеродинамика. Тази екосистема гарантира максимална възвръщаемост на инвестицията за бъдещите кадри.</span>
+		</p>
+		<div style="text-align: center; margin-top: 20px;">
+			<img width="580" height="auto" src="img/varna/ecomomic/university-economics.jpg" alt="University of Economics Varna" style="margin: 10px; border-radius: 5%;">
+			<img width="490" height="auto" src="img/varna/vfu/VFU1.JPG" alt="Varna Free University" style="margin: 10px; border-radius: 5%;">
 		</div>
-		<div class="bg_varna">
-		</div>
-		<h1 style="text-align:center;">Varna</h1>
-		<p>Варна е сред най-важните университетски центрове в страната с осем висши училища, в които се обучават над 30 000 студенти.През 1920 г. във Варна е основано
-			 първото висше търговско училище в България. Във Варна се намират и Институт по океанология, Център по хидро и аеродинамика и филиалът на Институт 
-			 по метеорология и хидрология към Българската академия на науките, Институт по рибни ресурси, Институт по воден транспорт, Институт по корабостроене и по
-			  металознание.</p>
-			  <img width="580px" height="auto" src="img\varna\ecomomic\university-economics.jpg">
-			  <img width="490px" height="auto" src="img\varna\vfu\VFU1.JPG">
 	</body>
 </html>
