@@ -8,6 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Inject SEO tags
     injectHreflangTags();
 
+    // Update document title
+    updateDocumentTitle(currentLang);
+
     // Setup the toggle buttons
     setupToggle();
 });
@@ -21,6 +24,19 @@ function setLanguage(lang) {
 
     // Update UI toggle
     updateToggleUI(lang);
+
+    // Update document title
+    updateDocumentTitle(lang);
+}
+
+function updateDocumentTitle(lang) {
+    const titleEl = document.querySelector('title');
+    if (titleEl) {
+        const newTitle = titleEl.getAttribute(`data-title-${lang}`);
+        if (newTitle) {
+            document.title = newTitle;
+        }
+    }
 }
 
 function updateToggleUI(lang) {
