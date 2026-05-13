@@ -197,3 +197,79 @@ margin: 5px 5px 5px 5px;
         text-shadow: 1px 1px 1px #aaa;
 }
 
+
+/* Localization (i18n) UI Display Logic */
+html[lang="en"] .lang-bg {
+    display: none !important;
+}
+
+html[lang="bg"] .lang-en {
+    display: none !important;
+}
+
+/* UI Adaptation for Bulgarian Layouts (Cyrillic words are longer) */
+html[lang="bg"] body {
+    line-height: 1.6;
+}
+
+html[lang="bg"] .box > p, html[lang="bg"] .box-2 > p {
+    font-size: clamp(24px, 3vw, 36px); /* Scale down font size for longer bg text */
+    padding: 0 15px;
+}
+
+html[lang="bg"] h2 {
+    font-size: clamp(20px, 3vw, 28px);
+}
+
+html[lang="bg"] p {
+    font-size: clamp(14px, 2vw, 18px) !important;
+}
+
+html[lang="bg"] h1 {
+    font-size: clamp(24px, 4vw, 36px);
+}
+
+/* 60-30-10 Koda Aesthetic Updates */
+/* Koda Cyan: #4DB2C1, Clean White: #FFFFFF, Void Black: #000000 */
+body {
+    background-color: #000000;
+}
+ul, .topnav {
+    background-color: #000000;
+}
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #4DB2C1; /* Updated to Koda Cyan from orange */
+}
+.box:hover {
+    box-shadow: 0px 10px 20px 0px rgba(77, 178, 193, 0.563); /* Updated to Koda Cyan glow */
+}
+
+/* Language Toggle UI */
+.lang-toggle-wrapper {
+    float: right;
+    display: flex;
+    align-items: center;
+    height: 55px;
+    padding: 0 16px;
+}
+
+.lang-toggle {
+    cursor: pointer;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+}
+
+.lang-toggle span {
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.lang-toggle span.active {
+    background-color: #4DB2C1; /* Koda Cyan */
+    color: #000000; /* Void Black */
+}

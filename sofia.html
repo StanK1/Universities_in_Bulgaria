@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="bg">
 	<head>
+		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="icon" type="img" href="img/icon/favicon1.png"> <!--Open source e-->
-		<title>Bulgarian University</title>
+		<link rel="icon" type="image/png" href="img/icon/favicon1.png">
+		<title data-title-en="Sofia Hub | High Performance Digital Infrastructure" data-title-bg="Bulgarian University | Изграждаме дигитална инфраструктура">Bulgarian University | Изграждаме дигитална инфраструктура</title>
 		<link rel="stylesheet" href="Design.css">
 		
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
   
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="https://allfont.net/allfont.css?fonts=roboto-thin" rel="stylesheet" type="text/css" />
-  <script src="animations.js" type="js"></script>
+
+  <script src="i18n.js" defer integrity="sha384-M2HXcdRPDY+BXQEc5NEJIlwz2djtoXS9Cn0VJ1UPx144iEh86yPSphtAEJ1Tgwaa" crossorigin="anonymous"></script>
+  <script src="animations.js" defer integrity="sha384-DwQdrDcq58oGUuiXeWDghVAW1qf4phW1NDVmT3vK7XDOu+3CPdbRzpnVV7+ChHmM" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<div class="flex demo">
@@ -18,22 +22,22 @@
 
 				<div class="mySlides fade">
 
-				  <img class="top" src="img/lego4_varna.jpg"height="281px" width="1500px"/>
+				  <img class="top" src="img/lego4_varna.jpg" height="281" width="1500" alt="Varna Slide"/>
 				  <div class="text"></div>
 				</div>
 				
 				<div class="mySlides fade">
-				  <img class="top" src="img/lego4_gabrovo.jpg"height="281px" width="1500px"/>
+				  <img class="top" src="img/lego4_gabrovo.jpg" height="281" width="1500" alt="Gabrovo Slide"/>
 				  <div class="text"></div>
 				</div>
 				
 				<div class="mySlides fade">
-				  <img class="bottom" src="img/Plovdiv.jpg"height="281px" width="1500px"/>
+				  <img class="bottom" src="img/Plovdiv.jpg" height="281" width="1500" alt="Plovdiv Slide"/>
 				  <div class="text"></div>
 				</div>
 
 				<div class="mySlides fade">
-					<img class="top" src="img/lego2.jpg"height="281px" width="1500px"/>
+					<img class="top" src="img/lego2.jpg" height="281" width="1500" alt="Lego Slide"/>
 					<div class="text"></div>
 				  </div>
 
@@ -81,26 +85,70 @@
 
 		<div class="topnav">
 	<ul>
-		<li><a href="index.html" id="logo1"><img width="40px" height="40" class="logo" src="img/icon/favicon2.png"></a></li>
-		<li><a href="#home">Home</a></li>
-		<li><a href="http://unichoice.bg/specialnosti/">Специалности по университети</a></li>
+		<li><a href="index.html" id="logo1"><img width="40" height="40" class="logo" src="img/icon/favicon2.png" alt="Logo"></a></li>
+		<li>
+			<a href="index.html">
+				<span class="lang-en">Home</span>
+				<span class="lang-bg">Начало</span>
+			</a>
+		</li>
+		<li>
+			<a href="http://unichoice.bg/specialnosti/">
+				<span class="lang-en">University Specialties</span>
+				<span class="lang-bg">Специалности по университети</span>
+			</a>
+		</li>
 		<li class="dropdown">
-		  <a href="javascript:void(0)" class="dropbtn">Градове</a>
+		  <a href="javascript:void(0)" class="dropbtn">
+			<span class="lang-en">Cities</span>
+			<span class="lang-bg">Градове</span>
+		  </a>
 		  <div class="dropdown-content">
-			<a href="sofia.html">София</a>
-			<a href="plovdiv.html">Пловдив</a>
-			<a href="varna.html">Варна</a>
-			</li>
-			<li><a href="baloobrazuvane.html">Калкулатор на бал</a></li>
-			<li><a href="https://github.com/StanK1">Конткакти</a></li>
+			<a href="sofia.html">
+				<span class="lang-en">Sofia</span>
+				<span class="lang-bg">София</span>
+			</a>
+			<a href="plovdiv.html">
+				<span class="lang-en">Plovdiv</span>
+				<span class="lang-bg">Пловдив</span>
+			</a>
+			<a href="varna.html">
+				<span class="lang-en">Varna</span>
+				<span class="lang-bg">Варна</span>
+			</a>
 		  </div>
-		  </ul>
+		</li>
+		<li>
+			<a href="baloobrazuvane.html">
+				<span class="lang-en">Score Calculator</span>
+				<span class="lang-bg">Калкулатор на бал</span>
+			</a>
+		</li>
+		<li>
+			<a href="https://github.com/StanK1">
+				<span class="lang-en">Contacts</span>
+				<span class="lang-bg">Контакти</span>
+			</a>
+		</li>
+	</ul>
+	<div class="lang-toggle-wrapper">
+		<button class="lang-toggle">
+			<span data-lang="en">EN</span> / <span data-lang="bg" class="active">BG</span>
+		</button>
+	</div>
+</div>
+
+		<h1 style="text-align:center; color: white;">
+			<span class="lang-en">Sofia</span>
+			<span class="lang-bg">София</span>
+		</h1>
+		<p style="color: white; padding: 0 20px;">
+			<span class="lang-en">We engineer digital platforms. 22 out of 52 accredited higher education institutions in Bulgaria are located in Sofia, training over 100,000 students. High performance architecture and custom code are at the heart of the educational framework here. Four of the top five universities, including the oldest – Sofia University (founded 1888), which features 16 faculties and 3 departments – operate in the capital, delivering immense ROI for ambitious ventures.</span>
+			<span class="lang-bg">Изграждаме дигитална инфраструктура. В София се намират 22 от 52 акредитирани висши училища в България, в които се обучават над 100 хиляди студенти. Ръчно писан код и висока производителност формират ядрото на нашата образователна система. Четири от петте ВУЗ-ове с най-висок рейтинг са в столицата – Софийският университет „Св. Климент Охридски“ (СУ), Медицинският университет, Техническият университет и Нов български университет. СУ е най-старото висше училище, основано на 1 октомври 1888 г., гарантирайки максимална възвръщаемост на инвестицията за Вашия бизнес и развитие.</span>
+		</p>
+		<div style="text-align: center; margin-top: 20px;">
+			<img width="400" height="auto" src="img/lego2.jpg" alt="Sofia Lego" style="margin: 10px; border-radius: 5%;">
+			<img width="auto" height="270" src="img/sofia/su/sofia_university_panorama_2.jpg" alt="Sofia University Panorama" style="margin: 10px; border-radius: 5%;">
 		</div>
-		<h1 style="text-align:center;">Sofia</h1>
-		<p style="font-size:120%;">В София се намират 22 от 52 акредитирани висши училища в България, в които се обучават над 100 хиляди студенти. Четири от петте ВУЗ-ове с най-висок рейтинг са в столицата – Софийският университет „Св. Климент Охридски“ (СУ), Медицинският университет, Техническият университет и Нов български университет. СУ е най-старото висше училище в страната. Основан на 1 октомври 1888 г., днес той има 16 факултета и 3 департамента, като в него се обучават над 20 хиляди студенти.</p>
-		<img width="400px" height="auto" src="img/lego2.jpg">
-		<img width="auto" height="270px" src="img/sofia/su/sofia_university_panorama_2.jpg">
 	</body>
-
-
- </html>
+</html>
