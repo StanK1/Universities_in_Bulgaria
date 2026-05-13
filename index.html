@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="bg">
 	<head>
+		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="icon" type="img" href="img/icon/favicon1.png"> <!--Open source e-->
-		<title>Bulgarian University</title>
+		<link rel="icon" type="image/png" href="img/icon/favicon1.png">
+		<title data-title-en="Bulgarian University | High Performance Digital Infrastructure" data-title-bg="Български университет | Изграждаме дигитална инфраструктура">Български университет | Изграждаме дигитална инфраструктура</title>
 		<link rel="stylesheet" href="Design.css">
 		
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
   
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="https://allfont.net/allfont.css?fonts=roboto-thin" rel="stylesheet" type="text/css" />
-  <script src="animations.js" type="js"></script>
+
+  <script src="i18n.js" defer integrity="sha384-M2HXcdRPDY+BXQEc5NEJIlwz2djtoXS9Cn0VJ1UPx144iEh86yPSphtAEJ1Tgwaa" crossorigin="anonymous"></script>
+  <script src="animations.js" defer integrity="sha384-DwQdrDcq58oGUuiXeWDghVAW1qf4phW1NDVmT3vK7XDOu+3CPdbRzpnVV7+ChHmM" crossorigin="anonymous"></script>
 	</head>
 	<body>
 
@@ -19,27 +23,29 @@
 
 				<div class="mySlides fade">
 
-				  <img class="top" src="img/lego4_varna.jpg"height="281px" width="1500px"/>
+				  <img class="top" src="img/lego4_varna.jpg" height="281" width="1500" alt="Varna Slide"/>
 				  <div class="text"></div>
 				</div>
 				
 				<div class="mySlides fade">
-				  <img class="top" src="img/lego4_gabrovo.jpg"height="281px" width="1500px"/>
+				  <img class="top" src="img/lego4_gabrovo.jpg" height="281" width="1500" alt="Gabrovo Slide"/>
 				  <div class="text"></div>
 				</div>
 				
 				<div class="mySlides fade">
-				  <img class="bottom" src="img/Plovdiv.jpg"height="281px" width="1500px"/>
+				  <img class="bottom" src="img/Plovdiv.jpg" height="281" width="1500" alt="Plovdiv Slide"/>
 				  <div class="text"></div>
 				</div>
 
 				<div class="mySlides fade">
-					<img class="top" src="img/lego2.jpg"height="281px" width="1500px"/>
+					<img class="top" src="img/lego2.jpg" height="281" width="1500" alt="Lego Slide"/>
 					<div class="text"></div>
 				  </div>
 
 				  <script>
 					let slideIndex = 1;
+					const slides = document.getElementsByClassName("mySlides");
+					const dots = document.getElementsByClassName("dot");
 					showSlides(slideIndex);
 					
 					function plusSlides(n) {
@@ -52,8 +58,6 @@
 					
 					function showSlides(n) {
 					  let i;
-					  let slides = document.getElementsByClassName("mySlides");
-					  let dots = document.getElementsByClassName("dot");
 					  if (n > slides.length) {slideIndex = 1}    
 					  if (n < 1) {slideIndex = slides.length}
 					  for (i = 0; i < slides.length; i++) {
@@ -82,74 +86,109 @@
 
 		<div class="topnav">
 	<ul>
-		<li><a href="index.html" id="logo1"><img width="40px" height="40" class="logo" src="img/icon/favicon2.png"></a></li>
-		<li><a href="index.html">Home</a></li>
-		<li><a href="http://unichoice.bg/specialnosti/">Специалности по университети</a></li>
+		<li><a href="index.html" id="logo1"><img width="40" height="40" class="logo" src="img/icon/favicon2.png" alt="Logo"></a></li>
+		<li>
+			<a href="index.html">
+				<span class="lang-en">Home</span>
+				<span class="lang-bg">Начало</span>
+			</a>
+		</li>
+		<li>
+			<a href="http://unichoice.bg/specialnosti/">
+				<span class="lang-en">University Specialties</span>
+				<span class="lang-bg">Специалности по университети</span>
+			</a>
+		</li>
 		<li class="dropdown">
-		  <a href="javascript:void(0)" class="dropbtn">Градове</a>
+		  <a href="javascript:void(0)" class="dropbtn">
+			<span class="lang-en">Cities</span>
+			<span class="lang-bg">Градове</span>
+		  </a>
 		  <div class="dropdown-content">
-			<a href="sofia.html">София</a>
-			<a href="plovdiv.html">Пловдив</a>
-			<a href="varna.html">Варна</a>
-			</li>
-			<li><a href="baloobrazuvane.html">Калкулатор на бал</a></li>
-			<li><a href="https://github.com/StanK1">Конткакти</a></li>
+			<a href="sofia.html">
+				<span class="lang-en">Sofia</span>
+				<span class="lang-bg">София</span>
+			</a>
+			<a href="plovdiv.html">
+				<span class="lang-en">Plovdiv</span>
+				<span class="lang-bg">Пловдив</span>
+			</a>
+			<a href="varna.html">
+				<span class="lang-en">Varna</span>
+				<span class="lang-bg">Варна</span>
+			</a>
 		  </div>
-		  </ul>
-		</div>
+		</li>
+		<li>
+			<a href="baloobrazuvane.html">
+				<span class="lang-en">Score Calculator</span>
+				<span class="lang-bg">Калкулатор на бал</span>
+			</a>
+		</li>
+		<li>
+			<a href="https://github.com/StanK1">
+				<span class="lang-en">Contacts</span>
+				<span class="lang-bg">Контакти</span>
+			</a>
+		</li>
+	</ul>
+	<div class="lang-toggle-wrapper">
+		<button class="lang-toggle">
+			<span data-lang="en">EN</span> / <span data-lang="bg" class="active">BG</span>
+		</button>
+	</div>
+</div>
 
 <div class="flex three">
 <div class="box">
 	<div class="box_image"><a href="sofia.html"></a>
-		<img  src="img/lego2.jpg">
+		<img src="img/lego2.jpg" alt="Sofia Lego">
 	</div>
 	<div class="center">
 	</div>
-			<p style="font-size:60%; color: rgb(255, 255, 255);">В София се намират 22 от 52 акредитирани висши училища в България, в които се обучават над 100 хиляди студенти.
-				Четири от петте ВУЗ-ове с най-висок рейтинг са в столицата – Софийският университет „Св. Климент Охридски“ (СУ), Медицинският университет,
-				Техническият университет и Нов български университет. СУ е най-старото висше училище в страната. Основан на 1 октомври 1888 г., днес той има
-				16 факултета и 3 департамента, като в него се обучават над 20 хиляди студенти.</p>
+			<p style="color: rgb(255, 255, 255);">
+				<span class="lang-en">We engineer digital platforms. 22 out of 52 accredited higher education institutions in Bulgaria are located in Sofia, where over 100,000 students are trained. High performance architecture and custom code form the core of our educational structure, delivering maximum ROI for your business and development. Four of the top five universities are here.</span>
+				<span class="lang-bg">Изграждаме дигитална инфраструктура. В София се намират 22 от 52 акредитирани висши училища в България, в които се обучават над 100 хиляди студенти. Ръчно писан код и висока производителност формират ядрото на нашата образователна система, гарантирайки максимална възвръщаемост на инвестицията за Вашия бизнес и развитие. Четири от петте ВУЗ-ове с най-висок рейтинг са в столицата.</span>
+			</p>
 </div>
-</div> <!--https://www.sitepoint.com/css-box-shadow-animation-performance/-->
+</div>
 <div class="box-2">
 	<div class="center">
 	
-			<p style="font-size:60%; color: white;">В София се намират 22 от 52 акредитирани висши училища в България, в които се обучават над 100 хиляди студенти.
-				Четири от петте ВУЗ-ове с най-висок рейтинг са в столицата – Софийският университет „Св. Климент Охридски“ (СУ), Медицинският университет,
-				Техническият университет и Нов български университет. СУ е най-старото висше училище в страната. Основан на 1 октомври 1888 г., днес той има
-				16 факултета и 3 департамента, като в него се обучават над 20 хиляди студенти.</p>
-			</div>
+			<p style="color: white;">
+				<span class="lang-en">We engineer digital platforms. 22 out of 52 accredited higher education institutions in Bulgaria are located in Sofia, where over 100,000 students are trained. High performance architecture and custom code form the core of our educational structure, delivering maximum ROI for your business and development. Four of the top five universities are here.</span>
+				<span class="lang-bg">Изграждаме дигитална инфраструктура. В София се намират 22 от 52 акредитирани висши училища в България, в които се обучават над 100 хиляди студенти. Ръчно писан код и висока производителност формират ядрото на нашата образователна система, гарантирайки максимална възвръщаемост на инвестицията за Вашия бизнес и развитие. Четири от петте ВУЗ-ове с най-висок рейтинг са в столицата.</span>
+			</p>
+	</div>
 </div>
 	
 
 						
 					
-		<div class="flex two three-600 six-1200 demo"> <!--Да направя отделни страници за всеки един град-->
-			<h2><a href="/">Бургас</a></h2>
-			<h2><a href="/">Благоевград</a></h2>
-			<h2><a href="/">Велико Търново</a></h2>
-			<h2><a href="/">Русе</a></h2>
-			<h2><a href="/">Стара Загора</a></h2>
-			<h2><a href="/">Хасково</a></h2>
-			<h2><a href="/">Ямбол</a></h2>
-			<h2><a href="/">Перник</a></h2>
-			<h2><a href="/">Шумен</a></h2>
-			<h2><a href="/">Враца</a></h2>
-			<h2><a href="/">Кърджали</a></h2>
-			<h2><a href="/">Смолян</a></h2>
-			<h2><a href="/">Ботевград</a></h2>
-			<h2><a href="/">Габрово</a></h2>
- 			<h2><a href="/">Сливен</a></h2>
- 			<h2><a href="/">Силистра</a></h2>
- 			<h2><a href="/">Хасково</a></h2>
-			<h2><a href="/">Добрич</a></h2>
-			<h2><a href="/">Ловеч</a></h2>
-			<h2><a href="/">Кърджали</a></h2>
+		<div class="flex two three-600 six-1200 demo">
+			<h2><a href="/"><span class="lang-en">Burgas</span><span class="lang-bg">Бургас</span></a></h2>
+			<h2><a href="/"><span class="lang-en">Blagoevgrad</span><span class="lang-bg">Благоевград</span></a></h2>
+			<h2><a href="/"><span class="lang-en">Veliko Tarnovo</span><span class="lang-bg">Велико Търново</span></a></h2>
+			<h2><a href="/"><span class="lang-en">Ruse</span><span class="lang-bg">Русе</span></a></h2>
+			<h2><a href="/"><span class="lang-en">Stara Zagora</span><span class="lang-bg">Стара Загора</span></a></h2>
+			<h2><a href="/"><span class="lang-en">Haskovo</span><span class="lang-bg">Хасково</span></a></h2>
+			<h2><a href="/"><span class="lang-en">Yambol</span><span class="lang-bg">Ямбол</span></a></h2>
+			<h2><a href="/"><span class="lang-en">Pernik</span><span class="lang-bg">Перник</span></a></h2>
+			<h2><a href="/"><span class="lang-en">Shumen</span><span class="lang-bg">Шумен</span></a></h2>
+			<h2><a href="/"><span class="lang-en">Vratsa</span><span class="lang-bg">Враца</span></a></h2>
+			<h2><a href="/"><span class="lang-en">Kardzhali</span><span class="lang-bg">Кърджали</span></a></h2>
+			<h2><a href="/"><span class="lang-en">Smolyan</span><span class="lang-bg">Смолян</span></a></h2>
+			<h2><a href="/"><span class="lang-en">Botevgrad</span><span class="lang-bg">Ботевград</span></a></h2>
+			<h2><a href="/"><span class="lang-en">Gabrovo</span><span class="lang-bg">Габрово</span></a></h2>
+			<h2><a href="/"><span class="lang-en">Sliven</span><span class="lang-bg">Сливен</span></a></h2>
+			<h2><a href="/"><span class="lang-en">Silistra</span><span class="lang-bg">Силистра</span></a></h2>
+			<h2><a href="/"><span class="lang-en">Haskovo</span><span class="lang-bg">Хасково</span></a></h2>
+			<h2><a href="/"><span class="lang-en">Dobrich</span><span class="lang-bg">Добрич</span></a></h2>
+			<h2><a href="/"><span class="lang-en">Lovech</span><span class="lang-bg">Ловеч</span></a></h2>
+			<h2><a href="/"><span class="lang-en">Kardzhali</span><span class="lang-bg">Кърджали</span></a></h2>
 		</div>
 		<div class="footer">
 		</div>
 
 	</body>
-
-
- </html>
+</html>
