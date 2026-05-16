@@ -42,35 +42,6 @@
 					<div class="text"></div>
 				  </div>
 
-				  <script>
-					let slideIndex = 1;
-					const slides = document.getElementsByClassName("mySlides");
-					const dots = document.getElementsByClassName("dot");
-					showSlides(slideIndex);
-					
-					function plusSlides(n) {
-					  showSlides(slideIndex += n);
-					}
-					
-					function currentSlide(n) {
-					  showSlides(slideIndex = n);
-					}
-					
-					function showSlides(n) {
-					  let i;
-					  if (n > slides.length) {slideIndex = 1}    
-					  if (n < 1) {slideIndex = slides.length}
-					  for (i = 0; i < slides.length; i++) {
-						slides[i].style.display = "none";  
-					  }
-					  for (i = 0; i < dots.length; i++) {
-						dots[i].className = dots[i].className.replace(" active", "");
-					  }
-					  slides[slideIndex-1].style.display = "block";  
-					  dots[slideIndex-1].className += " active";
-					}
-					</script>
-					
 				<a class="prev" href="javascript:void(0);" aria-label="Previous slide" title="Previous slide" onclick="plusSlides(-1)">❮</a>
 				<a class="next" href="javascript:void(0);" aria-label="Next slide" title="Next slide" onclick="plusSlides(1)">❯</a>
 				
@@ -147,8 +118,8 @@
 	<div class="center">
 	</div>
 			<p style="color: rgb(255, 255, 255);">
-				<span class="lang-en">We engineer digital platforms. 22 out of 52 accredited higher education institutions in Bulgaria are located in Sofia, where over 100,000 students are trained. High performance architecture and custom code form the core of our educational structure, delivering maximum ROI for your business and development. Four of the top five universities are here.</span>
-				<span class="lang-bg">Изграждаме дигитална инфраструктура. В София се намират 22 от 52 акредитирани висши училища в България, в които се обучават над 100 хиляди студенти. Ръчно писан код и висока производителност формират ядрото на нашата образователна система, гарантирайки максимална възвръщаемост на инвестицията за Вашия бизнес и развитие. Четири от петте ВУЗ-ове с най-висок рейтинг са в столицата.</span>
+				<span class="lang-en">We engineer digital platforms. Sofia hosts 22 of Bulgaria's 52 accredited higher education institutions, training over 100,000 students. High performance architecture and custom code form the core of our educational structure, delivering maximum ROI for your business and development. Four of the top five universities operate here.</span>
+				<span class="lang-bg">Изграждаме дигитална инфраструктура. В София се намират 22 от 52 акредитирани висши училища в България, които обучават над 100 хиляди студенти. Ръчно писан код и висока производителност формират ядрото на нашата образователна система, гарантирайки максимална възвръщаемост на инвестицията за Вашия бизнес и развитие. Четири от петте университета с най-висок рейтинг оперират в столицата.</span>
 			</p>
 </div>
 </div>
@@ -156,8 +127,8 @@
 	<div class="center">
 	
 			<p style="color: white;">
-				<span class="lang-en">We engineer digital platforms. 22 out of 52 accredited higher education institutions in Bulgaria are located in Sofia, where over 100,000 students are trained. High performance architecture and custom code form the core of our educational structure, delivering maximum ROI for your business and development. Four of the top five universities are here.</span>
-				<span class="lang-bg">Изграждаме дигитална инфраструктура. В София се намират 22 от 52 акредитирани висши училища в България, в които се обучават над 100 хиляди студенти. Ръчно писан код и висока производителност формират ядрото на нашата образователна система, гарантирайки максимална възвръщаемост на инвестицията за Вашия бизнес и развитие. Четири от петте ВУЗ-ове с най-висок рейтинг са в столицата.</span>
+				<span class="lang-en">We engineer digital platforms. Sofia hosts 22 of Bulgaria's 52 accredited higher education institutions, training over 100,000 students. High performance architecture and custom code form the core of our educational structure, delivering maximum ROI for your business and development. Four of the top five universities operate here.</span>
+				<span class="lang-bg">Изграждаме дигитална инфраструктура. В София се намират 22 от 52 акредитирани висши училища в България, които обучават над 100 хиляди студенти. Ръчно писан код и висока производителност формират ядрото на нашата образователна система, гарантирайки максимална възвръщаемост на инвестицията за Вашия бизнес и развитие. Четири от петте университета с най-висок рейтинг оперират в столицата.</span>
 			</p>
 	</div>
 </div>

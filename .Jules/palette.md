@@ -5,7 +5,7 @@ To ensure proper rendering of Bulgarian characters and accommodate the language 
 
 ## Layout Expansion Strategies (Cyrillic Text Expansion)
 Bulgarian/Cyrillic text generally takes 20-30% more horizontal space than its English equivalent. To prevent visual overflow and unintended orphans:
-- Responsive font sizing utilizing `clamp()` functions is applied when `html[lang="bg"]` is active.
+- Responsive font sizing utilizing `clamp()` functions is applied when `html[lang="bg"]` is active. This scales fonts responsively based on viewport width while providing a minimum and maximum font size.
 - Padding inside container elements `.box` and `.box-2` has been adjusted to allow proper text reflow.
 - Line heights have been slightly extended for readability inside `.lang-bg` contexts to preserve clean vertical rhythm.
 
