@@ -9,15 +9,15 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-function plusSlides(n) {
+window.plusSlides = function(n) {
   showSlides(slideIndex += n);
 }
 
-function currentSlide(n) {
+window.currentSlide = function(n) {
   showSlides(slideIndex = n);
 }
 
-function showSlides(n) {
+window.showSlides = function(n) {
   let i;
   if (!slides || slides.length === 0) return;
   if (n > slides.length) {slideIndex = 1}    

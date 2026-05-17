@@ -1,3 +1,20 @@
+## [Date: 2026-05-17] - Localization & Copywriting Engine
+
+**🌐 i18n Architecture:**
+- Refined `i18n.js` to cache the query selectors for `.lang-toggle span` and `title` outside the event callbacks, minimizing redundant DOM lookups and enhancing responsiveness.
+- Centralized slideshow rendering by removing redundant inline scripts for slideshow initialization across all HTML templates, deferring entirely to `animations.js`.
+
+**✍️ Copywriting & Transcreation:**
+- Masterfully updated English copy replacing passive voice with dynamic B2B active structures. (e.g., changed "22 out of 52 accredited higher education institutions in Bulgaria are located in Sofia..." to "Sofia hosts 22 of Bulgaria's 52 accredited higher education institutions...").
+
+**📏 UI Adaptation:**
+- Preserved existing layout clamps for Cyrillic localization expansions inside `Design.css`, ensuring the 60-30-10 Koda constraint is maintained unconditionally.
+
+**⚠️ Integrity Checks:**
+- Cyrillic font subset loaded successfully: Pass
+- Hreflang SEO tags correctly injected via JavaScript: Pass
+- Zero layout breaks on mobile for BG language: Pass
+
 ## [Date: 2026-05-13] - Localization & Copywriting Engine
 
 **🌐 i18n Architecture:**
