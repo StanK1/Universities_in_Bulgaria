@@ -1,19 +1,18 @@
-## [Date: 2026-05-16] - Localization & Copywriting Engine
+## [Date: 2026-05-17] - Localization & Copywriting Engine
 
 **🌐 i18n Architecture:**
-- Refactored `index.html`, `sofia.html`, `plovdiv.html`, `varna.html`, and `baloobrazuvane.html` to eliminate redundant inline script tags containing slideshow logic. The UI animation and slideshow logic is correctly centralized in `animations.js` and loaded via the `<head>` using the `defer` attribute.
+- Refined `i18n.js` to cache the query selectors for `.lang-toggle span` and `title` outside the event callbacks, minimizing redundant DOM lookups and enhancing responsiveness.
+- Centralized slideshow rendering by removing redundant inline scripts for slideshow initialization across all HTML templates, deferring entirely to `animations.js`.
 
 **✍️ Copywriting & Transcreation:**
-- Masterfully transcreated all structural content across the platform into B2B Executive Tech Bulgarian (utilizing professional IT terminology like "Изграждаме дигитална инфраструктура", "Ръчно писан код", "Висока производителност", and "Възвръщаемост на инвестицията" (ROI)).
-- Refined the English copy cutting fluff and substituting passive tones with active, powerful executive verbs (e.g., "We engineer digital platforms", "Sofia hosts 22 of Bulgaria's 52 accredited higher education institutions", "Plovdiv... scales a diverse, high performance infrastructure").
+- Masterfully updated English copy replacing passive voice with dynamic B2B active structures. (e.g., changed "22 out of 52 accredited higher education institutions in Bulgaria are located in Sofia..." to "Sofia hosts 22 of Bulgaria's 52 accredited higher education institutions...").
 
 **📏 UI Adaptation:**
-- Verified responsive font metrics leveraging `clamp()` within `Design.css` successfully accommodate the 20-30% character expansion intrinsic to Cyrillic script, avoiding orphan words and overflow.
-- Maintained the strict 60-30-10 absolute color rule (Void Black `#000000`, Clean White `#FFFFFF`, Koda Cyan `#4DB2C1`).
+- Preserved existing layout clamps for Cyrillic localization expansions inside `Design.css`, ensuring the 60-30-10 Koda constraint is maintained unconditionally.
 
 **⚠️ Integrity Checks:**
 - Cyrillic font subset loaded successfully: Pass
-- Hreflang SEO tags implemented: Pass
+- Hreflang SEO tags correctly injected via JavaScript: Pass
 - Zero layout breaks on mobile for BG language: Pass
 
 ## [Date: 2026-05-13] - Localization & Copywriting Engine

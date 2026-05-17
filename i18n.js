@@ -1,4 +1,10 @@
+let titleEl;
+let langToggles;
+
 document.addEventListener('DOMContentLoaded', () => {
+    titleEl = document.querySelector('title');
+    langToggles = document.querySelectorAll('.lang-toggle span');
+
     const defaultLang = 'bg';
     let currentLang = localStorage.getItem('siteLang') || defaultLang;
 
@@ -30,7 +36,6 @@ function setLanguage(lang) {
 }
 
 function updateDocumentTitle(lang) {
-    const titleEl = document.querySelector('title');
     if (titleEl) {
         const newTitle = titleEl.getAttribute(`data-title-${lang}`);
         if (newTitle) {
@@ -40,8 +45,8 @@ function updateDocumentTitle(lang) {
 }
 
 function updateToggleUI(lang) {
-    const toggles = document.querySelectorAll('.lang-toggle span');
-    toggles.forEach(toggle => {
+    if (!langToggles) return;
+    langToggles.forEach(toggle => {
         if (toggle.dataset.lang === lang) {
             toggle.classList.add('active');
         } else {
@@ -51,7 +56,7 @@ function updateToggleUI(lang) {
 }
 
 function setupToggle() {
-    const langToggles = document.querySelectorAll('.lang-toggle span');
+    if (!langToggles) return;
 
     // Set initial state
     updateToggleUI(document.documentElement.lang);
@@ -67,22 +72,25 @@ function setupToggle() {
 
 function injectHreflangTags() {
     const head = document.head;
+    const path = window.location.pathname;
+
+    // Check if tags already exist to avoid duplicates
+    if (document.querySelector('link[hreflang="en"]')) return;
 
     const enLink = document.createElement('link');
     enLink.rel = 'alternate';
     enLink.hreflang = 'en';
-    enLink.href = window.location.href; // In a real routing setup this would be different
+    enLink.href = window.location.origin + path + '?lang=en';
 
     const bgLink = document.createElement('link');
     bgLink.rel = 'alternate';
     bgLink.hreflang = 'bg';
-    bgLink.href = window.location.href;
+    bgLink.href = window.location.origin + path + '?lang=bg';
 
-    // default
     const defLink = document.createElement('link');
     defLink.rel = 'alternate';
     defLink.hreflang = 'x-default';
-    defLink.href = window.location.href;
+    defLink.href = window.location.origin + path + '?lang=bg';
 
     head.appendChild(enLink);
     head.appendChild(bgLink);
