@@ -43,7 +43,7 @@ li {
 
 li a, .dropbtn {
   display: inline-block;
-  color: rgb(255, 255, 255);
+  color: #FFFFFF;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -63,7 +63,7 @@ li a:hover, .dropdown:hover .dropbtn {
   position: absolute;
   background-color: #FFFFFF;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -113,7 +113,7 @@ img {vertical-align: middle;}
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: rgb(255, 255, 255);
+  color: #FFFFFF;
   font-weight: bold;
   font-size: 20px;
   transition: 0.6s ease;
@@ -140,7 +140,7 @@ top: 135px;
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: white;
+  background-color: #FFFFFF;
 }
 /* Fading animation */
 .fade {
@@ -171,14 +171,14 @@ div.box,div.box-2 {
   transition: box-shadow ease 0.5s;
 }
 .box:hover {
-  box-shadow: 0px 10px 20px 0px rgba(36, 36, 36, 0.25);
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 .box-2 {
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.5);
   transition: box-shadow ease 0.5s;
 }
 .box-2:hover {
-  box-shadow: 0px 20px 40px 0px rgba(36, 36, 36, 0.25);
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.25);
 }
 
 .box_image > img{
@@ -194,7 +194,7 @@ margin: 5px 5px 5px 5px;
 .box > p{
   font-family: 'Roboto Thin', arial;
         font-size: 48px;
-        text-shadow: 1px 1px 1px #aaa;
+        text-shadow: 1px 1px 1px #FFFFFF;
 }
 
 

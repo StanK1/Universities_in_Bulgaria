@@ -1,3 +1,19 @@
+## [Date: 2026-05-20] - Localization & Copywriting Engine
+
+**🌐 i18n Architecture:**
+- Updated Subresource Integrity (SRI) SHA-384 hash for `i18n.js` across all HTML templates to ensure security and loading integrity.
+
+**✍️ Copywriting & Transcreation:**
+- Refined Bulgarian transcreation by replacing colloquialisms (e.g., "ВУЗ-ове") with professional terminology ("висши учебни заведения") in `index.html` and `sofia.html` to align with the Elite B2B Executive Tech tone.
+
+**📏 UI Adaptation:**
+- Enforced the strict 60-30-10 Koda Studio color rule (Void Black `#000000`, Clean White `#FFFFFF`, Koda Cyan `#4DB2C1`) globally. Replaced all legacy color strings (`white`, `rgb(255, 255, 255)`, `#aaa`, `#333`, `rgba(36, 36, 36, ...)`) in `Design.css` and all `*.html` files.
+
+**⚠️ Integrity Checks:**
+- Cyrillic font subset loaded successfully: Pass
+- Hreflang SEO tags implemented: Pass
+- Zero layout breaks on mobile for BG language: Pass
+
 ## [Date: 2026-05-17] - Localization & Copywriting Engine
 
 **🌐 i18n Architecture:**
