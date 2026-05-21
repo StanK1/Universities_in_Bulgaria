@@ -191,10 +191,11 @@ margin: 5px 5px 5px 5px;
    height:auto; 
 }
 
-.box > p{
-  font-family: 'Roboto Thin', arial;
-        font-size: 48px;
-        text-shadow: 1px 1px 1px #aaa;
+.box > p, .box-2 > p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(16px, 2.5vw, 28px);
+  text-shadow: 1px 1px 1px #aaa;
+  padding: 0 15px;
 }
 
 
@@ -213,12 +214,13 @@ html[lang="bg"] body {
 }
 
 html[lang="bg"] .box > p, html[lang="bg"] .box-2 > p {
-    font-size: clamp(24px, 3vw, 36px); /* Scale down font size for longer bg text */
+    font-size: clamp(14px, 2vw, 24px) !important; /* Scaled down for much longer transcreated BG text */
     padding: 0 15px;
+    line-height: 1.4;
 }
 
 html[lang="bg"] h2 {
-    font-size: clamp(20px, 3vw, 28px);
+    font-size: clamp(18px, 2.5vw, 24px);
 }
 
 html[lang="bg"] p {
@@ -227,6 +229,12 @@ html[lang="bg"] p {
 
 html[lang="bg"] h1 {
     font-size: clamp(24px, 4vw, 36px);
+}
+
+/* Fix navigation bar spacing for Bulgarian text */
+html[lang="bg"] li a, html[lang="bg"] .dropbtn {
+    padding: 14px 12px;
+    font-size: clamp(12px, 1.5vw, 16px);
 }
 
 /* 60-30-10 Koda Aesthetic Updates */
