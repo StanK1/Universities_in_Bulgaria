@@ -1,3 +1,21 @@
+## [Date: 2026-05-21] - Localization & Copywriting Engine
+
+**🌐 i18n Architecture:**
+- Implemented a zero-flicker language toggle using local storage and inline scripts injected directly into the HTML `<head>` before stylesheets. This updates the `lang` attribute dynamically. SEO tags (hreflang) remain managed by the deferred `i18n.js`. Koda Cyan active states applied.
+
+**✍️ Copywriting & Transcreation:**
+- All major site pages (`index.html`, `sofia.html`, `plovdiv.html`, `varna.html`, `baloobrazuvane.html`) were overhauled.
+- English copy changed from passive forms to active, powerful B2B tech statements ("We engineer digital platforms").
+- Bulgarian copy was expertly transcreated to feature premium authoritative terms ("Изграждаме дигитална инфраструктура", "Ръчно писан код", "Висока производителност", "Възвръщаемост на инвестицията").
+
+**📏 UI Adaptation:**
+- Implemented CSS `clamp()` specifically for `html[lang="bg"]` layout contexts. Font sizes were safely scaled down, and navigation padding adjusted to comfortably contain 20-30% longer Cyrillic translations without breaking layout cards or overflowing standard boxes. Primary font mapped strictly to 'Montserrat'.
+
+**⚠️ Integrity Checks:**
+- Cyrillic font subset loaded successfully: Pass
+- Hreflang SEO tags implemented: Pass
+- Zero layout breaks on mobile for BG language: Pass
+
 ## [Date: 2026-05-17] - Localization & Copywriting Engine
 
 **🌐 i18n Architecture:**

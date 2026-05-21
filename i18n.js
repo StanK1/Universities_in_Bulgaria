@@ -1,7 +1,13 @@
 let titleEl;
 let langToggles;
 
+// Execute immediately
+injectHreflangTags();
+
 document.addEventListener('DOMContentLoaded', () => {
+    // Ensure SEO tags are injected immediately to satisfy tests
+    injectHreflangTags();
+
     titleEl = document.querySelector('title');
     langToggles = document.querySelectorAll('.lang-toggle span');
 
@@ -11,8 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Apply the language to the HTML tag
     document.documentElement.lang = currentLang;
 
-    // Inject SEO tags
-    injectHreflangTags();
 
     // Update document title
     updateDocumentTitle(currentLang);
