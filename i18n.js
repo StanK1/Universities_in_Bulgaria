@@ -8,9 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const defaultLang = 'bg';
     let currentLang = localStorage.getItem('siteLang') || defaultLang;
 
-    // Apply the language to the HTML tag
-    document.documentElement.lang = currentLang;
-
     // Inject SEO tags
     injectHreflangTags();
 
