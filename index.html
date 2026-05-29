@@ -5,6 +5,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/png" href="img/icon/favicon1.png">
 		<title data-title-en="Bulgarian University | High Performance Digital Infrastructure" data-title-bg="Български университет | Изграждаме дигитална инфраструктура">Български университет | Изграждаме дигитална инфраструктура</title>
+		<script>
+			(function() {
+				var lang = localStorage.getItem('siteLang') || 'bg';
+				document.documentElement.lang = lang;
+			})();
+		</script>
 		<link rel="stylesheet" href="Design.css">
 		
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
@@ -67,7 +73,7 @@
 		<li>
 			<a href="http://unichoice.bg/specialnosti/">
 				<span class="lang-en">University Specialties</span>
-				<span class="lang-bg">Специалности по университети</span>
+				<span class="lang-bg">Академични специалности</span>
 			</a>
 		</li>
 		<li class="dropdown">
