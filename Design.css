@@ -33,7 +33,8 @@ ul {
   overflow: hidden;
   background-color: #000000;
   top: 0;
-  height: 55px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 li {
@@ -246,11 +247,11 @@ li a:hover, .dropdown:hover .dropbtn {
 
 /* Language Toggle UI */
 .lang-toggle-wrapper {
-    float: right;
     display: flex;
     align-items: center;
     height: 55px;
     padding: 0 16px;
+    margin-left: auto;
 }
 
 .lang-toggle {

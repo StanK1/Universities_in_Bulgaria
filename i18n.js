@@ -8,9 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const defaultLang = 'bg';
     let currentLang = localStorage.getItem('siteLang') || defaultLang;
 
-    // Apply the language to the HTML tag
-    document.documentElement.lang = currentLang;
-
     // Inject SEO tags
     injectHreflangTags();
 
@@ -77,20 +74,23 @@ function injectHreflangTags() {
     // Check if tags already exist to avoid duplicates
     if (document.querySelector('link[hreflang="en"]')) return;
 
+    const baseUrl = 'http://unichoice.bg';
+    let finalPath = path === '/' || path === '' ? '/index.html' : path;
+
     const enLink = document.createElement('link');
     enLink.rel = 'alternate';
     enLink.hreflang = 'en';
-    enLink.href = window.location.origin + path + '?lang=en';
+    enLink.href = baseUrl + finalPath + '?lang=en';
 
     const bgLink = document.createElement('link');
     bgLink.rel = 'alternate';
     bgLink.hreflang = 'bg';
-    bgLink.href = window.location.origin + path + '?lang=bg';
+    bgLink.href = baseUrl + finalPath + '?lang=bg';
 
     const defLink = document.createElement('link');
     defLink.rel = 'alternate';
     defLink.hreflang = 'x-default';
-    defLink.href = window.location.origin + path + '?lang=bg';
+    defLink.href = baseUrl + finalPath + '?lang=bg';
 
     head.appendChild(enLink);
     head.appendChild(bgLink);
