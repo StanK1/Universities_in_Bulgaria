@@ -80,17 +80,17 @@ function injectHreflangTags() {
     const enLink = document.createElement('link');
     enLink.rel = 'alternate';
     enLink.hreflang = 'en';
-    enLink.href = window.location.origin + path + '?lang=en';
+    enLink.href = 'http://unichoice.bg' + path + '?lang=en';
 
     const bgLink = document.createElement('link');
     bgLink.rel = 'alternate';
     bgLink.hreflang = 'bg';
-    bgLink.href = window.location.origin + path + '?lang=bg';
+    bgLink.href = 'http://unichoice.bg' + path + '?lang=bg';
 
     const defLink = document.createElement('link');
     defLink.rel = 'alternate';
     defLink.hreflang = 'x-default';
-    defLink.href = window.location.origin + path + '?lang=bg';
+    defLink.href = 'http://unichoice.bg' + path + '?lang=bg';
 
     head.appendChild(enLink);
     head.appendChild(bgLink);

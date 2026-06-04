@@ -1,3 +1,21 @@
+## [Date: 2026-06-04] - Localization & Copywriting Engine
+
+**🌐 i18n Architecture:**
+- Implemented a synchronous zero-flicker client-side script setting the HTML `lang` attribute from `localStorage` immediately within the `<head>` of all HTML templates.
+- Corrected SEO hreflang tags in `i18n.js` to utilize the fully-qualified `http://unichoice.bg` domain explicitly, dropping local origin assumptions.
+- Updated `integrity` SHA-384 attributes on `<script src="i18n.js">` tags site-wide to guarantee SRI compliance after logic optimizations.
+
+**✍️ Copywriting & Transcreation:**
+- Refined transcreated B2B copywriting in `varna.html`, deliberately substituting generic phrasing with polite, authoritative phrasing ("Вашия бизнес" instead of "бъдещите кадри") to adhere completely to the Executive Tech Bulgarian tone requirements.
+
+**📏 UI Adaptation:**
+- Upgraded the `.topnav` and `ul` navigation elements in `Design.css` from legacy floats and fixed heights to CSS Flexbox (`display: flex; flex-wrap: wrap;`), robustly accommodating the 20-30% expansion innate to Cyrillic script.
+
+**⚠️ Integrity Checks:**
+- Cyrillic font subset loaded successfully: Pass
+- Hreflang SEO tags implemented: Pass
+- Zero layout breaks on mobile for BG language: Pass
+
 ## [Date: 2026-05-17] - Localization & Copywriting Engine
 
 **🌐 i18n Architecture:**
