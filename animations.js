@@ -1,10 +1,13 @@
 let slideIndex = 1;
 
-let slides = document.getElementsByClassName("mySlides");
-let dots = document.getElementsByClassName("dot");
+let slides;
+let dots;
 
 document.addEventListener('DOMContentLoaded', () => {
-  if (slides.length > 0) {
+  slides = document.getElementsByClassName("mySlides");
+  dots = document.getElementsByClassName("dot");
+
+  if (slides && slides.length > 0) {
     showSlides(slideIndex);
   }
 });

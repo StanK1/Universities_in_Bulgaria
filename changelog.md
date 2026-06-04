@@ -1,3 +1,24 @@
+## [Date: 2026-05-22] - Localization & Copywriting Engine
+
+**🌐 i18n Architecture:**
+- Implemented a synchronous inline script reading `localStorage` in the HTML `<head>` to set `document.documentElement.lang` instantly, achieving a true zero-flicker client-side i18n architecture.
+- Added dynamic SEO tags (`<link rel="alternate" hreflang="...">`) managed by deferred script logic.
+- Optimized performance by caching DOM elements in `animations.js` and regenerated precise SHA-384 hashes for Subresource Integrity.
+
+**✍️ Copywriting & Transcreation:**
+- Rewrote the Bulgarian transcreation to adopt an "Executive Tech" B2B tone, integrating vocabulary such as "Вашият бизнес" and "Изграждаме дигитална инфраструктура" rather than literal translations.
+- Refined English copy further, adopting stronger verbs and removing passive voice ("We engineer digital platforms") for maximum authority.
+
+**📏 UI Adaptation:**
+- Adjusted layout to strictly follow the 60-30-10 color rule aesthetic (Void Black `#000000`, Clean White `#FFFFFF`, and Koda Cyan `#4DB2C1`), dropping previous off-brand greys.
+- Appended `&subset=cyrillic` to all Google Fonts imports ensuring `Montserrat` renders flawlessly across localized texts.
+- Maintained UI constraints accommodating the 20-30% Cyrillic character expansion utilizing CSS `clamp()`.
+
+**⚠️ Integrity Checks:**
+- Cyrillic font subset loaded successfully: Pass
+- Hreflang SEO tags implemented: Pass
+- Zero layout breaks on mobile for BG language: Pass
+
 ## [Date: 2026-05-17] - Localization & Copywriting Engine
 
 **🌐 i18n Architecture:**
