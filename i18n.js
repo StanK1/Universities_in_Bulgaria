@@ -69,7 +69,19 @@ function setupToggle() {
 
 function injectHreflangTags() {
     const head = document.head;
-    const path = window.location.pathname;
+    let path = window.location.pathname;
+
+    // Remove leading slash if present to avoid double slashes if base domain is http://unichoice.bg
+    if (path.startsWith('/')) {
+        path = path.substring(1);
+    }
+
+    // For index/root, default to index.html or empty string for the url
+    if (path === '') {
+        path = 'index.html';
+    }
+
+    const baseDomain = 'http://unichoice.bg/';
 
     // Check if tags already exist to avoid duplicates
     if (document.querySelector('link[hreflang="en"]')) return;
@@ -77,17 +89,17 @@ function injectHreflangTags() {
     const enLink = document.createElement('link');
     enLink.rel = 'alternate';
     enLink.hreflang = 'en';
-    enLink.href = window.location.origin + path + '?lang=en';
+    enLink.href = baseDomain + path + '?lang=en';
 
     const bgLink = document.createElement('link');
     bgLink.rel = 'alternate';
     bgLink.hreflang = 'bg';
-    bgLink.href = window.location.origin + path + '?lang=bg';
+    bgLink.href = baseDomain + path + '?lang=bg';
 
     const defLink = document.createElement('link');
     defLink.rel = 'alternate';
     defLink.hreflang = 'x-default';
-    defLink.href = window.location.origin + path + '?lang=bg';
+    defLink.href = baseDomain + path + '?lang=bg';
 
     head.appendChild(enLink);
     head.appendChild(bgLink);

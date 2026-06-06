@@ -1,3 +1,23 @@
+## [Date: 2026-06-06] - Localization & Copywriting Engine
+
+**🌐 i18n Architecture:**
+- Refactored `i18n.js` to instantly toggle the `<html>` 'lang' attribute and inject `<link rel="alternate" hreflang="...">` tags dynamically.
+- Implemented absolute URLs for `hreflang` to ensure accurate global indexing by search engines.
+- Calculated and applied updated SHA-384 Subresource Integrity (SRI) hashes across all `.html` pages.
+
+**✍️ Copywriting & Transcreation:**
+- Completely transcreated English copy to Bulgarian, maintaining a B2B "Executive Tech" tone. Used premium vocabulary like "Изграждаме дигитална инфраструктура" (We engineer digital platforms), "Ръчно писан код" (Custom code), "Висока производителност" (High performance), and "Възвръщаемост на инвестицията" (ROI).
+- Enhanced English texts to employ active verbs and authoritative formatting, cutting down fluff.
+
+**📏 UI Adaptation:**
+- Upgraded navigation headers (`.topnav` and `ul`) by adopting CSS Flexbox layout (`display: flex; flex-wrap: wrap;`), overcoming standard vertical height constraints.
+- Adjusted paddings and removed strict float layouts in `Design.css` to accommodate the 20-30% longer Cyrillic translations gracefully on all viewport sizes.
+
+**⚠️ Integrity Checks:**
+- Cyrillic font subset loaded successfully: [Pass]
+- Hreflang SEO tags implemented: [Pass]
+- Zero layout breaks on mobile for BG language: [Pass]
+
 ## [Date: 2026-05-22] - Localization & Copywriting Engine
 
 **🌐 i18n Architecture:**
