@@ -1,3 +1,22 @@
+## [Date: 2026-06-08] - Localization & Copywriting Engine
+
+**🌐 i18n Architecture:**
+- Refactored `i18n.js` to correctly generate absolute URLs for `hreflang` tags by extracting only the filename from `window.location.pathname`, ensuring URLs like `http://unichoice.bg/sofia.html?lang=en` are correctly formed and don't duplicate domain paths.
+- Regenerated and applied new SHA-384 Subresource Integrity (SRI) hashes across all `.html` pages.
+
+**✍️ Copywriting & Transcreation:**
+- Validated all Bulgarian transcreation to maintain a B2B "Executive Tech" tone.
+- Verified English copy for active verbs and authoritative tone formatting.
+
+**📏 UI Adaptation:**
+- Verified 60-30-10 Koda aesthetic.
+- Layout remains consistent with Cyrillic translations across different viewports.
+
+**⚠️ Integrity Checks:**
+- Cyrillic font subset loaded successfully: [Pass]
+- Hreflang SEO tags implemented: [Pass]
+- Zero layout breaks on mobile for BG language: [Pass]
+
 ## [Date: 2026-06-06] - Localization & Copywriting Engine
 
 **🌐 i18n Architecture:**

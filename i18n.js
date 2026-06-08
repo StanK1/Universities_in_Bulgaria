@@ -71,12 +71,11 @@ function injectHreflangTags() {
     const head = document.head;
     let path = window.location.pathname;
 
-    // Remove leading slash if present to avoid double slashes if base domain is http://unichoice.bg
-    if (path.startsWith('/')) {
-        path = path.substring(1);
-    }
+    // Extract just the filename to ensure fully qualified URLs like http://unichoice.bg/sofia.html?lang=en
+    const pathParts = path.split('/');
+    path = pathParts[pathParts.length - 1];
 
-    // For index/root, default to index.html or empty string for the url
+    // For index/root, default to index.html
     if (path === '') {
         path = 'index.html';
     }
