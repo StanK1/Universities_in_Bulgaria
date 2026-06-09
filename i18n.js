@@ -25,6 +25,8 @@ function setLanguage(lang) {
     localStorage.setItem('siteLang', lang);
     document.documentElement.lang = lang;
 
+    window.history.pushState(null, '', "?lang=" + lang);
+
     // Update UI toggle
     updateToggleUI(lang);
 
@@ -69,7 +71,7 @@ function setupToggle() {
 
 function injectHreflangTags() {
     const head = document.head;
-    let path = window.location.pathname;
+    let path = window.location.pathname.split('/').pop();
 
     // Remove leading slash if present to avoid double slashes if base domain is http://unichoice.bg
     if (path.startsWith('/')) {

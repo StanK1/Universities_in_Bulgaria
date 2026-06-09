@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/png" href="img/icon/favicon1.png">
-		<script>!function(){var e=localStorage.getItem("siteLang")||"bg";document.documentElement.lang=e}();</script>
+		<script>!function(){var s=new URLSearchParams(window.location.search).get("lang"),e=s||localStorage.getItem("siteLang")||"bg";document.documentElement.lang=e;if(s)localStorage.setItem("siteLang",s)}();</script>
 		<title data-title-en="Varna Hub | High Performance Digital Infrastructure" data-title-bg="Варна Хъб | Изграждаме дигитална инфраструктура">Варна Хъб | Изграждаме дигитална инфраструктура</title>
 		<link rel="stylesheet" href="Design.css">
 		
@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="https://allfont.net/allfont.css?fonts=roboto-thin" rel="stylesheet" type="text/css" />
 
-  <script src="i18n.js" defer integrity="sha384-pM+uinI8lo6ghHK83AnUQA2/o5ssdviRYPPL67I2RCKd6K7cRKdJ95Efe9jeXg24" crossorigin="anonymous"></script>
+  <script src="i18n.js" defer integrity="sha384-CoG+FenhfexYL8/8I0Vw+HMVOWH+6YKOwurv6NSjGViPPE3u5bVi2PUTU8STvW71" crossorigin="anonymous"></script>
   <script src="animations.js" defer integrity="sha384-aRqTLxN4FYobsCBZETq3Kjrnh1STrXeM3TjvuYHi4ao46wtPBrXzDkp+5JakUVwg" crossorigin="anonymous"></script>
 	</head>
 	<body>
