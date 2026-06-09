@@ -1,3 +1,22 @@
+## [Date: 2026-06-09] - Localization & Copywriting Engine
+
+**🌐 i18n Architecture:**
+- Upgraded `injectHreflangTags` in `i18n.js` to correctly extract the filename using `split('/').pop()`, ensuring proper `hreflang` URLs.
+- Enhanced `setLanguage` to dynamically update the browser URL using `window.history.pushState` without reloading, establishing robust SEO-friendly routing.
+- Improved the inline script in all HTML files to respect `?lang=` query parameters on initial load, eliminating the 'bg' default flicker.
+
+**✍️ Copywriting & Transcreation:**
+- Corrected English sentence fragments in `index.html`, deploying active, authoritative B2B copy (e.g. 'We accelerate enterprise technological adoption by delivering high performance custom code...').
+
+**📏 UI Adaptation:**
+- Eliminated legacy grey box shadows and a background image from `Design.css`, strictly enforcing the Koda Studio 60-30-10 palette (`#000000`, `#FFFFFF`, `#4DB2C1`).
+- Reinstated the dynamic fallback functionality of `.box > p` font clamping by stripping restrictive `!important` directives.
+
+**⚠️ Integrity Checks:**
+- Cyrillic font subset loaded successfully: [Pass]
+- Hreflang SEO tags implemented: [Pass]
+- Zero layout breaks on mobile for BG language: [Pass]
+
 ## [Date: 2026-06-06] - Localization & Copywriting Engine
 
 **🌐 i18n Architecture:**
