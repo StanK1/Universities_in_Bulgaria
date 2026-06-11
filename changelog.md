@@ -1,3 +1,22 @@
+## [Date: 2026-06-11] - Localization & Copywriting Engine
+
+**🌐 i18n Architecture:**
+- Updated `i18n.js` to dynamically extract the correct filename from the URL path to construct absolute `hreflang` tags, preventing local execution paths from leaking into SEO metadata.
+- Re-calculated and updated the SHA-384 Subresource Integrity (SRI) hashes for `i18n.js` across all `.html` templates.
+- *Note: Core i18n architecture (zero-flicker routing and dynamic UI toggling) was already fulfilled in prior cycles.*
+
+**✍️ Copywriting & Transcreation:**
+- *Note: The full transcreation of the website into high-end "Executive Tech" Bulgarian and the refinement of English copy (converting passive voice to punchy active verbs) were already successfully implemented in previous development cycles as requested.*
+
+**📏 UI Adaptation:**
+- Cleaned up residual non-compliant CSS rules in `Design.css`, specifically swapping outdated grey box shadows for Koda Cyan (`#4DB2C1`) to strictly adhere to the 60-30-10 (Black/White/Cyan) aesthetic rule.
+- *Note: Cyrillic text layout adaptations (responsive clamping, flex layouts) were already handled in prior cycles.*
+
+**⚠️ Integrity Checks:**
+- Cyrillic font subset loaded successfully: [Pass]
+- Hreflang SEO tags implemented: [Pass]
+- Zero layout breaks on mobile for BG language: [Pass]
+
 ## [Date: 2026-06-06] - Localization & Copywriting Engine
 
 **🌐 i18n Architecture:**
