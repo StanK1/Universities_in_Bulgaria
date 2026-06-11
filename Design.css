@@ -174,14 +174,14 @@ div.box,div.box-2 {
   transition: box-shadow ease 0.5s;
 }
 .box:hover {
-  box-shadow: 0px 10px 20px 0px rgba(36, 36, 36, 0.25);
+  box-shadow: 0px 10px 20px 0px rgba(77, 178, 193, 0.8);
 }
 .box-2 {
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.5);
   transition: box-shadow ease 0.5s;
 }
 .box-2:hover {
-  box-shadow: 0px 20px 40px 0px rgba(36, 36, 36, 0.25);
+  box-shadow: 0px 20px 40px 0px rgba(77, 178, 193, 0.8);
 }
 
 .box_image > img{
