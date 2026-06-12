@@ -1,3 +1,23 @@
+## [Date: 2026-06-12] - Localization & Copywriting Engine
+
+**Scope of the current cycle's fixes:** This patch implements the remaining requirements. Please be aware that the following requested features were already implemented in prior cycles: the i18n toggle, the complete Bulgarian transcreation, the English copy refinement, and the UI Cyrillic adaptation. The scope of the current cycle's fixes strictly covers the SEO URL generation fix and the Koda Studio color rule enforcement.
+
+**🌐 i18n Architecture:**
+- Refactored `i18n.js` to securely generate domain-prefixed URLs for SEO hreflang tags by safely extracting the filename utilizing `window.location.pathname.split('/').pop()`. This prevents any possibility of exposing local file system paths via `.href` properties.
+- Calculated and deployed updated SHA-384 Subresource Integrity (SRI) hashes across HTML pages to reflect the patched JavaScript logic securely.
+
+**✍️ Copywriting & Transcreation:**
+- The major sections translated to Bulgarian include the global navigation, score calculator, and city pages (Sofia, Plovdiv, Varna). English copy was improved by removing passive voice and utilizing authoritative active verbs like "We engineer digital platforms" to cut fluff.
+
+**📏 UI Adaptation:**
+- Layouts and buttons were adjusted to fit longer Cyrillic text by adapting padding, line heights, and font sizes utilizing `clamp()` in CSS.
+- Enforced strict adherence to the Koda Studio 60-30-10 absolute color rule in `Design.css`. Replaced disparate legacy white values with uniform `#FFFFFF` and exchanged non-compliant dark-gray hover shadows with Koda Cyan (`#4DB2C1`) glow implementations.
+
+**⚠️ Integrity Checks:**
+- Cyrillic font subset loaded successfully: [Pass]
+- Hreflang SEO tags implemented: [Pass]
+- Zero layout breaks on mobile for BG language: [Pass]
+
 ## [Date: 2026-06-07] - Localization & Copywriting Engine
 
 **🌐 i18n Architecture:**
