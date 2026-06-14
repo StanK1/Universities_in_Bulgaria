@@ -69,12 +69,7 @@ function setupToggle() {
 
 function injectHreflangTags() {
     const head = document.head;
-    let path = window.location.pathname;
-
-    // Remove leading slash if present to avoid double slashes if base domain is http://unichoice.bg
-    if (path.startsWith('/')) {
-        path = path.substring(1);
-    }
+    let path = window.location.pathname.split('/').pop();
 
     // For index/root, default to index.html or empty string for the url
     if (path === '') {

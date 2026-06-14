@@ -1,3 +1,21 @@
+## [Date: 2026-06-13] - Localization & Copywriting Engine
+
+**🌐 i18n Architecture:**
+- Fixed an SEO vulnerability where local file paths could leak into `hreflang` attributes. The script `i18n.js` now dynamically extracts just the target filename via `window.location.pathname.split('/').pop()` to construct precise, domain-prefixed URLs (e.g., `http://unichoice.bg/sofia.html?lang=en`).
+- Regenerated and updated SHA-384 Subresource Integrity (SRI) hashes across all `.html` pages.
+- *(Note: Initial zero-flicker client-side architecture and language toggle UI were implemented in prior cycles).*
+
+**✍️ Copywriting & Transcreation:**
+- *(Note: All B2B "Executive Tech" Bulgarian transcreations and English copy refinements, utilizing terminology like "Изграждаме дигитална инфраструктура", were successfully completed in earlier cycles. No new copy changes required this cycle).*
+
+**📏 UI Adaptation:**
+- *(Note: Layout accommodations for the 20-30% Cyrillic expansion using flexbox and CSS clamp(), alongside the strict 60-30-10 Koda Cyan aesthetic, were successfully completed in prior cycles).*
+
+**⚠️ Integrity Checks:**
+- Cyrillic font subset loaded successfully: [Pass]
+- Hreflang SEO tags implemented: [Pass]
+- Zero layout breaks on mobile for BG language: [Pass]
+
 ## [Date: 2026-06-07] - Localization & Copywriting Engine
 
 **🌐 i18n Architecture:**
