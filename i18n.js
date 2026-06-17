@@ -81,22 +81,15 @@ function injectHreflangTags() {
     // Check if tags already exist to avoid duplicates
     if (document.querySelector('link[hreflang="en"]')) return;
 
-    const enLink = document.createElement('link');
-    enLink.rel = 'alternate';
-    enLink.hreflang = 'en';
-    enLink.href = baseDomain + path + '?lang=en';
+    const createHreflangLink = (rel, hreflang, href) => {
+        const link = document.createElement('link');
+        link.rel = rel;
+        link.hreflang = hreflang;
+        link.href = href;
+        head.appendChild(link);
+    };
 
-    const bgLink = document.createElement('link');
-    bgLink.rel = 'alternate';
-    bgLink.hreflang = 'bg';
-    bgLink.href = baseDomain + path + '?lang=bg';
-
-    const defLink = document.createElement('link');
-    defLink.rel = 'alternate';
-    defLink.hreflang = 'x-default';
-    defLink.href = baseDomain + path + '?lang=bg';
-
-    head.appendChild(enLink);
-    head.appendChild(bgLink);
-    head.appendChild(defLink);
+    createHreflangLink('alternate', 'en', baseDomain + path + '?lang=en');
+    createHreflangLink('alternate', 'bg', baseDomain + path + '?lang=bg');
+    createHreflangLink('alternate', 'x-default', baseDomain + path + '?lang=bg');
 }
