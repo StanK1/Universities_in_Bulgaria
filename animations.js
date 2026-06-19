@@ -1,3 +1,7 @@
+/**
+ * Global UI Animations Controller
+ * Centralizes slideshow rendering and attaches event listeners to window for deferred execution.
+ */
 let slideIndex = 1;
 
 let slides;
