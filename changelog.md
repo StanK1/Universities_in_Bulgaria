@@ -35,6 +35,27 @@
 - Hreflang SEO tags implemented: [Pass]
 - Zero layout breaks on mobile for BG language: [Pass]
 
+## [Date: 2026-06-19] - Localization & Copywriting Engine
+
+**🌐 i18n Architecture:**
+- *(Note: Core features like the language switcher and inline logic were implemented in prior cycles).*
+- Updated `hreflang` tags generation in `i18n.js` to strictly output `https://unichoice.bg/` instead of `http`.
+- Recalculated and manually updated SHA-384 Subresource Integrity (SRI) hashes for `i18n.js` across all HTML pages for heightened security.
+
+**✍️ Copywriting & Transcreation:**
+- *(Note: Complete site transcreation to Bulgarian and B2B English refinement were completed in prior cycles).*
+- Improved B2B Bulgarian copywriting in `index.html` by upgrading general phrasing ("образователна система" -> "дигитална екосистема") for a more cohesive Executive Tech tone.
+
+**📏 UI Adaptation:**
+- *(Note: CSS clamp scaling and Cyrillic font subset loading were implemented in prior cycles).*
+- Refined styling in `Design.css` by upgrading `rgb()` strings and color names (`white`) to pure hex values (`#FFFFFF`) to comply exactly with the 60-30-10 Koda Studio palette.
+- Tweaked `line-height` for Bulgarian locales from `1.6` to `1.65` to grant longer Cyrillic text better visual flow and readability.
+
+**⚠️ Integrity Checks:**
+- Cyrillic font subset loaded successfully: [Pass]
+- Hreflang SEO tags implemented: [Pass]
+- Zero layout breaks on mobile for BG language: [Pass]
+
 ## [Date: 2026-06-07] - Localization & Copywriting Engine
 
 **🌐 i18n Architecture:**
