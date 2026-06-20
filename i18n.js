@@ -48,11 +48,7 @@ function updateDocumentTitle(lang) {
 function updateToggleUI(lang) {
     if (!langToggles) return;
     langToggles.forEach(toggle => {
-        if (toggle.dataset.lang === lang) {
-            toggle.classList.add('active');
-        } else {
-            toggle.classList.remove('active');
-        }
+        toggle.classList.toggle('active', toggle.dataset.lang === lang);
     });
 }
 

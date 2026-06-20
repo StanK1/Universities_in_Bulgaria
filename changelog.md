@@ -1,3 +1,21 @@
+## [Date: 2026-06-20] - Localization & Copywriting Engine
+
+**🌐 i18n Architecture:**
+- Optimized the `updateToggleUI` function in `i18n.js` to utilize `classList.toggle` instead of explicit conditional blocks, streamlining state management logic.
+- Calculated and updated SHA-384 Subresource Integrity (SRI) hashes across all `.html` pages to reflect the modified `i18n.js`.
+
+**✍️ Copywriting & Transcreation:**
+- Refined B2B English copy across `index.html` and `plovdiv.html`, ensuring maximum impact (e.g., updating "aggressive ROI" to "maximum ROI", and "architect robust digital systems" to "engineer robust digital systems").
+- Transcreated the updated terminology into Bulgarian maintaining the "Executive Tech" tone (e.g., "максимална възвръщаемост", "Проектираме надеждни дигитални системи").
+
+**📏 UI Adaptation:**
+- Verified that the 20-30% Cyrillic expansion accommodations and the strict 60-30-10 Koda Studio color rules remain flawlessly intact across the new copy updates.
+
+**⚠️ Integrity Checks:**
+- Cyrillic font subset loaded successfully: [Pass]
+- Hreflang SEO tags implemented: [Pass]
+- Zero layout breaks on mobile for BG language: [Pass]
+
 ## [Date: 2026-06-16] - Localization & Copywriting Engine
 
 **🌐 i18n Architecture:**
