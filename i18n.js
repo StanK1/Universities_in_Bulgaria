@@ -1,6 +1,7 @@
 /**
  * Zero-Flicker Client-Side i18n Architecture
  * Handles local storage state, dynamic title injection, and dynamic SEO tags.
+ * Performance optimized and transcreated by Jules - 2026-06-08
  */
 let titleEl;
 let langToggles;
