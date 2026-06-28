@@ -72,7 +72,7 @@ function injectHreflangTags() {
     let path = window.location.pathname.split('/').pop();
 
     // For index/root, default to index.html or empty string for the url
-    if (path === '') {
+    if (!path || path === '') {
         path = 'index.html';
     }
 
@@ -96,7 +96,10 @@ function injectHreflangTags() {
     defLink.hreflang = 'x-default';
     defLink.href = baseDomain + path + '?lang=bg';
 
-    head.appendChild(enLink);
-    head.appendChild(bgLink);
-    head.appendChild(defLink);
+    const fragment = document.createDocumentFragment();
+    fragment.appendChild(enLink);
+    fragment.appendChild(bgLink);
+    fragment.appendChild(defLink);
+
+    head.appendChild(fragment);
 }
