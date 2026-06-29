@@ -69,12 +69,7 @@ function setupToggle() {
 
 function injectHreflangTags() {
     const head = document.head;
-    let path = window.location.pathname.split('/').pop();
-
-    // For index/root, default to index.html or empty string for the url
-    if (path === '') {
-        path = 'index.html';
-    }
+    let path = window.location.pathname.split('/').pop() || 'index.html';
 
     const baseDomain = 'http://unichoice.bg/';
 

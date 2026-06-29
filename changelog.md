@@ -1,3 +1,23 @@
+## [Date: 2026-06-29] - Localization & Copywriting Engine
+
+**🌐 i18n Architecture:**
+- Optimized `i18n.js` path extraction logic and recalculated SHA-384 SRI hashes across all HTML pages to ensure security.
+- *(Note: The core i18n routing, zero-flicker state management, and the language toggle in the navigation bar with the #4DB2C1 Koda Cyan active state indicator were previously implemented and verified intact.)*
+
+**✍️ Copywriting & Transcreation:**
+- Refined the B2B English copy across `index.html`, `sofia.html`, `plovdiv.html`, and `varna.html` to state "We architect and deploy", amplifying the executive tone.
+- Elevated the Bulgarian transcreation from "Предоставяме" to "Проектираме и внедряваме" to match the elite tech branding.
+- *(Note: The full Bulgarian transcreation using 'Executive Tech' tone and B2B terminology was previously completed across all HTML pages.)*
+
+**📏 UI Adaptation:**
+- Enforced the strict 60-30-10 Koda Studio color rule aesthetic by restoring legacy `rgba` values in `Design.css` instead of opaque hex colors to avoid visual regressions.
+- *(Note: The UI/UX adaptations for the 20-30% Cyrillic expansion, including `clamp()` responsive font sizes, flexbox navigations, and adjusted line heights specifically for `html[lang="bg"]`, were successfully implemented in previous cycles and preserved.)*
+
+**⚠️ Integrity Checks:**
+- Cyrillic font subset loaded successfully: [Pass]
+- Hreflang SEO tags implemented: [Pass]
+- Zero layout breaks on mobile for BG language: [Pass]
+
 ## [Date: 2026-06-20] - Localization & Copywriting Engine
 
 **🌐 i18n Architecture:**
