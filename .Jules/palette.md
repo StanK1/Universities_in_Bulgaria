@@ -22,3 +22,5 @@ The implementation of localization ensures seamless context switching without pa
 - Dynamic CSS (`display: none`) on `.lang-en` / `.lang-bg` classes provides an instantaneous visual change, completely eliminating white flashes.
 - Document title dynamically updates by querying contextual `data-title-en` and `data-title-bg` attribute sets.
 - Employs `<link rel="alternate" hreflang="...">` to explicitly guide SEO indexing without rendering delays.
+## Accessibility ARIA Guidelines
+To ensure language toggles are accessible, ARIA attributes such as `aria-pressed` must dynamically follow the `.active` status of toggles in `i18n.js` to ensure screen readers correctly interpret the state.
