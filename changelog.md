@@ -1,3 +1,28 @@
+## [Date: 2026-07-03] - Localization & Copywriting Engine
+
+**🌐 i18n Architecture:**
+- [PREVIOUSLY COMPLETED] Implemented a zero-flicker `localStorage` script inline in the HTML `<head>` for instant client-side language switching (EN / BG).
+- [PREVIOUSLY COMPLETED] Embedded an elegant language toggle into the global navigation bar, using Koda Cyan (`#4DB2C1`) for the active state indicator.
+- [PREVIOUSLY COMPLETED] Automatically injected correct `<link rel="alternate" hreflang="...">` tags dynamically to maintain SEO integrity across all `.html` pages.
+- [NEW] Updated `i18n.js` logic to toggle the `aria-pressed` attribute on language buttons, ensuring better accessibility.
+- [NEW] Recalculated and updated the `i18n.js` SHA-384 Subresource Integrity (SRI) hash across all HTML files.
+
+**✍️ Copywriting & Transcreation:**
+- [PREVIOUSLY COMPLETED] Masterfully transcreated website copy to Bulgarian across `index.html`, `sofia.html`, `plovdiv.html`, and `varna.html`, maintaining the authoritative "Executive Tech" B2B tone (e.g., "Вие", "Изграждаме дигитална инфраструктура", "Възвръщаемост на инвестицията").
+- [PREVIOUSLY COMPLETED] Refined the English copy further by removing fluff and shifting passive voice to active verbs.
+- [NEW] Rewrote English texts across `index.html`, `sofia.html`, `plovdiv.html`, and `varna.html` to integrate even stronger B2B phrasing, such as "high-performance" and "enterprise operations."
+- [NEW] Updated Bulgarian transcreation to lean even further into B2B digital transformation (using "корпоративно развитие" and "дигитална екосистема").
+
+**📏 UI Adaptation:**
+- [PREVIOUSLY COMPLETED] Adjusted responsive layout configurations (utilizing CSS `clamp()` properties for fonts) and padding adjustments in `Design.css` to gracefully handle the 20-30% expansion of Cyrillic text without breaking components.
+- [PREVIOUSLY COMPLETED] Converted top navigation elements to Flexbox where necessary to ensure buttons and headers don't wrap awkwardly.
+- [NEW] Updated UI element colors in `Design.css` to fully adhere to the strict 60-30-10 Koda constraint (changing `rgb(255, 255, 255)` explicitly to `#FFFFFF`).
+
+**⚠️ Integrity Checks:**
+- Cyrillic font subset loaded successfully: [Pass]
+- Hreflang SEO tags implemented: [Pass]
+- Zero layout breaks on mobile for BG language: [Pass]
+
 ## [Date: 2026-06-20] - Localization & Copywriting Engine
 
 **🌐 i18n Architecture:**
