@@ -48,7 +48,9 @@ function updateDocumentTitle(lang) {
 function updateToggleUI(lang) {
     if (!langToggles) return;
     langToggles.forEach(toggle => {
-        toggle.classList.toggle('active', toggle.dataset.lang === lang);
+        const isActive = toggle.dataset.lang === lang;
+        toggle.classList.toggle('active', isActive);
+        toggle.setAttribute('aria-pressed', isActive ? 'true' : 'false');
     });
 }
 
@@ -72,7 +74,7 @@ function injectHreflangTags() {
     let path = window.location.pathname.split('/').pop();
 
     // For index/root, default to index.html or empty string for the url
-    if (path === '') {
+    if (!path || path === '') {
         path = 'index.html';
     }
 

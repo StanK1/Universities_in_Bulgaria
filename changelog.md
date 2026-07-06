@@ -1,3 +1,24 @@
+## [Date: 2026-07-06] - Localization & Copywriting Engine
+
+**🌐 i18n Architecture:**
+- [NEW] Updated `i18n.js` to toggle the `aria-pressed` attribute on the language toggle for better accessibility.
+- [NEW] Refined `i18n.js` path extraction in `injectHreflangTags()` to handle undefined or empty paths securely.
+- [PREVIOUSLY COMPLETED] Utilized `classList.toggle` instead of explicit conditional blocks, streamlining state management logic.
+
+**✍️ Copywriting & Transcreation:**
+- [NEW] Refined B2B English copy in `varna.html` (changed "stands out as" to "operates as") and `sofia.html` (updated ROI delivery text to be more authoritative), and matched them with the elite "Executive Tech" B2B tone in Bulgarian.
+- [PREVIOUSLY COMPLETED] Refined B2B English copy across `index.html` and `plovdiv.html`, ensuring maximum impact. Transcreated the updated terminology into Bulgarian maintaining the "Executive Tech" tone.
+
+**📏 UI Adaptation:**
+- [NEW] Added a premium hover state in `Design.css` for `.lang-toggle span:not(.active):hover` using `#FFFFFF` background and `#000000` text color.
+- [NEW] Strictly enforced the 60-30-10 Koda Studio color rule by replacing remaining `rgb` and `rgba` colors with their exact Hex equivalents (`#FFFFFF`, `#000000`, `#4DB2C1`).
+- [PREVIOUSLY COMPLETED] Verified that the 20-30% Cyrillic expansion accommodations and the strict 60-30-10 Koda Studio color rules remain flawlessly intact across the new copy updates.
+
+**⚠️ Integrity Checks:**
+- [NEW] Cyrillic font subset loaded successfully: [Pass]
+- [NEW] Hreflang SEO tags implemented: [Pass]
+- [NEW] Zero layout breaks on mobile for BG language: [Pass]
+
 ## [Date: 2026-06-20] - Localization & Copywriting Engine
 
 **🌐 i18n Architecture:**
