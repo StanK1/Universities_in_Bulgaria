@@ -1,3 +1,27 @@
+## [Date: 2026-06-21] - Localization & Copywriting Engine
+
+**🌐 i18n Architecture:**
+- [NEW] Updated `updateToggleUI` in `i18n.js` to dynamically set the `aria-pressed` attribute for enhanced screen reader accessibility.
+- [NEW] Optimized `updateDocumentTitle` in `i18n.js` to only update the title if it has changed, preventing redundant DOM writes.
+- [NEW] Recalculated and updated SHA-384 Subresource Integrity (SRI) hashes for `i18n.js` across all `.html` pages.
+- [PREVIOUSLY COMPLETED] Initial zero-flicker client-side architecture and language toggle UI.
+- [PREVIOUSLY COMPLETED] Dynamic injection of `hreflang` tags based on active locale.
+
+**✍️ Copywriting & Transcreation:**
+- [NEW] Refined English copy in `varna.html` to enhance B2B impact (e.g., changed "produces unparalleled ROI" to "yields unprecedented ROI").
+- [NEW] Transcreated the updated terminology in `varna.html` into B2B Executive Tech Bulgarian (e.g., updated "безкомпромисна възвръщаемост" to "безпрецедентна възвръщаемост").
+- [PREVIOUSLY COMPLETED] B2B "Executive Tech" transcreations across all structural pages (e.g., "Изграждаме дигитална инфраструктура", "Ръчно писан код").
+- [PREVIOUSLY COMPLETED] English copy refinements cutting fluff and substituting passive tones with active, powerful executive verbs.
+
+**📏 UI Adaptation:**
+- [PREVIOUSLY COMPLETED] Layout accommodations for the 20-30% Cyrillic expansion using flexbox and CSS clamp().
+- [PREVIOUSLY COMPLETED] Strict enforcement of the 60-30-10 Koda Studio aesthetic (Void Black `#000000`, Clean White `#FFFFFF`, and Koda Cyan `#4DB2C1`).
+
+**⚠️ Integrity Checks:**
+- Cyrillic font subset loaded successfully: [Pass]
+- Hreflang SEO tags implemented: [Pass]
+- Zero layout breaks on mobile for BG language: [Pass]
+
 ## [Date: 2026-06-20] - Localization & Copywriting Engine
 
 **🌐 i18n Architecture:**

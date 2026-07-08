@@ -39,7 +39,7 @@ function setLanguage(lang) {
 function updateDocumentTitle(lang) {
     if (titleEl) {
         const newTitle = titleEl.getAttribute(`data-title-${lang}`);
-        if (newTitle) {
+        if (newTitle && document.title !== newTitle) {
             document.title = newTitle;
         }
     }
@@ -48,7 +48,9 @@ function updateDocumentTitle(lang) {
 function updateToggleUI(lang) {
     if (!langToggles) return;
     langToggles.forEach(toggle => {
-        toggle.classList.toggle('active', toggle.dataset.lang === lang);
+        const isActive = toggle.dataset.lang === lang;
+        toggle.classList.toggle('active', isActive);
+        toggle.setAttribute('aria-pressed', isActive);
     });
 }
 
