@@ -1,3 +1,25 @@
+## [Date: 2026-07-09] - Localization & Copywriting Engine
+
+**🌐 i18n Architecture:**
+- [PREVIOUSLY COMPLETED] Implemented zero-flicker client-side i18n logic using `localStorage`.
+- [PREVIOUSLY COMPLETED] Built dynamic language toggle (EN / BG) into navigation.
+- [NEW] Added ARIA accessibility (`aria-pressed` state) directly to the language toggles in `i18n.js` to assist screen readers and maintain active state correctness.
+- [NEW] Recalculated and applied updated SHA-384 Subresource Integrity (SRI) hashes across `index.html`, `sofia.html`, `plovdiv.html`, `varna.html`, and `baloobrazuvane.html`.
+
+**✍️ Copywriting & Transcreation:**
+- [PREVIOUSLY COMPLETED] Transcreated content into Bulgarian focusing on the B2B "Executive Tech" tone.
+- [NEW] Refined English copy further on `index.html` and `sofia.html` by streamlining sentence structures and shifting to active voice ("Custom code and high performance architecture drive our educational framework").
+- [NEW] Streamlined Bulgarian transcreation on `sofia.html` removing unnecessary descriptors ("Св. Климент Охридски") for a tighter, high-end punch.
+
+**📏 UI Adaptation:**
+- [PREVIOUSLY COMPLETED] Scaled text metrics using `clamp()` to accommodate 20-30% longer Cyrillic translation string lengths.
+- [NEW] Updated `Design.css` to hook the Koda Cyan (#4DB2C1) and Void Black (#000000) styling into the new `[aria-pressed="true"]` attributes, perfectly maintaining the 60-30-10 Koda Studio brand identity.
+
+**⚠️ Integrity Checks:**
+- Cyrillic font subset loaded successfully: [Pass]
+- Hreflang SEO tags implemented: [Pass]
+- Zero layout breaks on mobile for BG language: [Pass]
+
 ## [Date: 2026-06-20] - Localization & Copywriting Engine
 
 **🌐 i18n Architecture:**

@@ -270,7 +270,7 @@ li a:hover, .dropdown:hover .dropbtn {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.lang-toggle span.active {
+.lang-toggle span.active, .lang-toggle span[aria-pressed="true"] {
     background-color: #4DB2C1; /* Koda Cyan */
     color: #000000; /* Void Black */
 }
