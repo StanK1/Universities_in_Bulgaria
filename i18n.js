@@ -48,7 +48,9 @@ function updateDocumentTitle(lang) {
 function updateToggleUI(lang) {
     if (!langToggles) return;
     langToggles.forEach(toggle => {
-        toggle.classList.toggle('active', toggle.dataset.lang === lang);
+        const isActive = toggle.dataset.lang === lang;
+        toggle.classList.toggle('active', isActive);
+        toggle.setAttribute('aria-pressed', isActive.toString());
     });
 }
 
@@ -59,6 +61,7 @@ function setupToggle() {
     updateToggleUI(document.documentElement.lang);
 
     langToggles.forEach(toggle => {
+        toggle.setAttribute('role', 'button');
         toggle.addEventListener('click', (e) => {
             e.preventDefault();
             const newLang = e.target.dataset.lang;

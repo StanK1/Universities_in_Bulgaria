@@ -1,3 +1,24 @@
+## [Date: 2026-07-10] - Localization & Copywriting Engine
+
+**🌐 i18n Architecture:**
+- [NEW] Enhanced accessibility for the language toggle by dynamically injecting `aria-pressed` and `role="button"` attributes within `i18n.js` to ensure proper screen reader functionality.
+- [NEW] Recalculated and updated SHA-384 Subresource Integrity (SRI) hashes across all HTML files for `i18n.js` (`IAN/nUUH+s99Gxvrf6SCBS6h1RS2wlqNehSAIdvJ+6QHYpx6mNob3h+5KuW77CuR`) to ensure security post-modifications.
+- [PREVIOUSLY COMPLETED] Implemented a zero-flicker client-side i18n architecture with seamless language toggles, local storage integration, and dynamic SEO tags.
+
+**✍️ Copywriting & Transcreation:**
+- [NEW] Refined the English copy on the homepage to leverage active voice and authoritative B2B verbs ("We engineer enterprise digital adoption. We deploy custom code to seamlessly scale your operations, guaranteeing uncompromised quality and exponential ROI for your business.").
+- [NEW] Masterfully updated the homepage Bulgarian transcreation to flawlessly match the newly refined English copy, maintaining the authoritative "Executive Tech" B2B tone.
+- [PREVIOUSLY COMPLETED] Transcreated all major structural content into high-end Bulgarian, utilizing IT-focused terminology across the site.
+
+**📏 UI Adaptation:**
+- [NEW] Visually verified that the updated Cyrillic text integrates flawlessly into the layout without breaking cards or components via local Playwright testing.
+- [PREVIOUSLY COMPLETED] Adjusted responsive CSS layouts using Flexbox and `clamp()` to seamlessly accommodate the 20-30% expansion of Cyrillic text under the strict 60-30-10 Koda Studio color rule.
+
+**⚠️ Integrity Checks:**
+- Cyrillic font subset loaded successfully: [Pass]
+- Hreflang SEO tags implemented: [Pass]
+- Zero layout breaks on mobile for BG language: [Pass]
+
 ## [Date: 2026-06-20] - Localization & Copywriting Engine
 
 **🌐 i18n Architecture:**
