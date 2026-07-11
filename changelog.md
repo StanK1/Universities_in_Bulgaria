@@ -1,3 +1,21 @@
+## [Date: 2026-06-21] - Localization & Copywriting Engine
+
+**🌐 i18n Architecture:**
+- [PREVIOUSLY COMPLETED] Implemented dynamic client-side language switching and generated absolute `hreflang` tags.
+- [NEW] Enhanced `updateToggleUI` in `i18n.js` to dynamically set `aria-pressed` on the language toggle span for screen reader accessibility, and re-calculated the SRI hashes.
+
+**✍️ Copywriting & Transcreation:**
+- [PREVIOUSLY COMPLETED] Transcreated content into B2B Executive Tech Bulgarian across site pages.
+- [NEW] Refined English copy in `index.html` to focus on active acceleration (e.g., "accelerating the growth of over 100,000 students") and updated Bulgarian transcreation accordingly ("ускорявайки развитието на над 100 000 студенти").
+
+**📏 UI Adaptation:**
+- [PREVIOUSLY COMPLETED] Adjusted flexbox containers and used `clamp()` to manage 20-30% Cyrillic expansion, enforcing Koda Studio's 60-30-10 color aesthetics perfectly.
+
+**⚠️ Integrity Checks:**
+- Cyrillic font subset loaded successfully: [Pass]
+- Hreflang SEO tags implemented: [Pass]
+- Zero layout breaks on mobile for BG language: [Pass]
+
 ## [Date: 2026-06-20] - Localization & Copywriting Engine
 
 **🌐 i18n Architecture:**
