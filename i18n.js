@@ -76,7 +76,7 @@ function injectHreflangTags() {
         path = 'index.html';
     }
 
-    const baseDomain = 'http://unichoice.bg/';
+    const baseDomain = 'https://unichoice.bg/';
 
     // Check if tags already exist to avoid duplicates
     if (document.querySelector('link[hreflang="en"]')) return;
