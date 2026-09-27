@@ -4,6 +4,7 @@
  */
 let slideIndex = 1;
 
+// Initialize global slides state
 let slides;
 let dots;
 
