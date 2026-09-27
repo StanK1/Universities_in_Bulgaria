@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     titleEl = document.querySelector('title');
     langToggles = document.querySelectorAll('.lang-toggle span');
 
+    // Sets document lang attribute from storage
     const defaultLang = 'bg';
     let currentLang = localStorage.getItem('siteLang') || defaultLang;
 
