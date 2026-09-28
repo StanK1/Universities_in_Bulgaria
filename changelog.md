@@ -1,3 +1,23 @@
+## [Date: 2026-09-28] - Localization & Copywriting Engine
+
+**🌐 i18n Architecture:**
+- [PREVIOUSLY COMPLETED] Implemented a zero-flicker `localStorage` script inline in the HTML `<head>` for instant client-side language switching (EN / BG).
+- [PREVIOUSLY COMPLETED] Embedded an elegant language toggle into the global navigation bar, using Koda Cyan (`#4DB2C1`) for the active state indicator.
+- [NEW] Updated `i18n.js` to use `https://unichoice.bg/` instead of HTTP for explicitly generated hreflang tags to boost SEO integrity.
+- [NEW] Added `aria-pressed` dynamic attributes to `.lang-toggle span` in `i18n.js` for enhanced accessibility state reporting.
+- [NEW] Calculated and applied updated SHA-384 Subresource Integrity (SRI) hashes across all `.html` pages.
+
+**✍️ Copywriting & Transcreation:**
+- [PREVIOUSLY COMPLETED] Transcreated website copy to Bulgarian across the repository.
+
+**📏 UI Adaptation:**
+- [PREVIOUSLY COMPLETED] Adjusted responsive layout configurations, preserving the strict 60-30-10 Koda Studio aesthetic.
+
+**⚠️ Integrity Checks:**
+- Cyrillic font subset loaded successfully: [Pass]
+- Hreflang SEO tags implemented: [Pass]
+- Zero layout breaks on mobile for BG language: [Pass]
+
 ## [Date: 2026-06-20] - Localization & Copywriting Engine
 
 **🌐 i18n Architecture:**
