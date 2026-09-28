@@ -274,3 +274,14 @@ li a:hover, .dropdown:hover .dropbtn {
     background-color: #4DB2C1; /* Koda Cyan */
     color: #000000; /* Void Black */
 }
+
+
+/* Flexbox enhancements for cyrillic */
+html[lang="bg"] .topnav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+html[lang="bg"] .topnav li {
+    padding: 2px 0;
+}
