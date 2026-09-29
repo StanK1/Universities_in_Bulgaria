@@ -1,3 +1,23 @@
+## [Date: 2026-06-08] - Localization & Copywriting Engine
+
+**🌐 i18n Architecture:**
+- [PREVIOUSLY COMPLETED] Language toggle and localStorage state.
+- [NEW] Updated `i18n.js` SEO hreflang base domain to `https://` for secure SEO compliance.
+- [NEW] Added `aria-pressed` dynamic state to the language toggle in `i18n.js` and HTML files for accessibility.
+- [NEW] Updated SHA-384 Subresource Integrity (SRI) hashes across scripts.
+
+**✍️ Copywriting & Transcreation:**
+- [PREVIOUSLY COMPLETED] Translated texts to Bulgarian utilizing professional IT terminology.
+- [NEW] Refined English copy across `index.html`, `sofia.html`, `plovdiv.html`, and `varna.html` by cutting fluff and enhancing authoritative verbs (e.g., changed "We engineer" to "We architect").
+
+**📏 UI Adaptation:**
+- [PREVIOUSLY COMPLETED] CSS Flexbox and clamp() accommodations for Cyrillic expansion.
+
+**⚠️ Integrity Checks:**
+- Cyrillic font subset loaded successfully: [Pass]
+- Hreflang SEO tags implemented: [Pass]
+- Zero layout breaks on mobile for BG language: [Pass]
+
 ## [Date: 2026-06-20] - Localization & Copywriting Engine
 
 **🌐 i18n Architecture:**
