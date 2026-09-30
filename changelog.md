@@ -1,3 +1,25 @@
+## [Date: 2026-09-30] - Localization & Copywriting Engine
+
+**🌐 i18n Architecture:**
+- [NEW] Enhanced `updateToggleUI` in `i18n.js` to dynamically set `aria-pressed` states on language toggles for improved accessibility.
+- [NEW] Updated `baseDomain` in `i18n.js` to `https://unichoice.bg/` to enforce secure SEO compliance for dynamically injected `hreflang` tags.
+- [NEW] Calculated and propagated a new SHA-384 Subresource Integrity (SRI) hash across all HTML pages to match the updated `i18n.js`.
+- [PREVIOUSLY COMPLETED] The core zero-flicker client-side architecture and instant `<html lang="...">` switching logic remains fully operational.
+
+**✍️ Copywriting & Transcreation:**
+- [NEW] Refined English B2B copy in `index.html` (upgraded "accelerate enterprise technological adoption" to "architect resilient enterprise technologies", and "engineer scalable digital platforms" to "architect scalable digital platforms").
+- [NEW] Refined English B2B copy in `varna.html`, `sofia.html`, and `plovdiv.html` (e.g. upgraded "engineer high performance marine..." to "architect elite maritime...", "engineer robust digital systems" to "architect robust digital systems").
+- [NEW] Updated corresponding Bulgarian transcreations with premium IT terminology ("Проектираме устойчиви корпоративни технологии", "Проектираме елитни морски и икономически технологии", "Проектираме мащабируема дигитална инфраструктура", and "Ние проектираме надеждни дигитални системи") while maintaining the formal plural B2B tone.
+- [PREVIOUSLY COMPLETED] The overarching English-to-Bulgarian transcreation across all pages remains intact.
+
+**📏 UI Adaptation:**
+- [PREVIOUSLY COMPLETED] Verified that the 20-30% Cyrillic expansion accommodations and the strict 60-30-10 Koda Studio color rules remain flawlessly intact across the new copy updates.
+
+**⚠️ Integrity Checks:**
+- Cyrillic font subset loaded successfully: [Pass]
+- Hreflang SEO tags implemented: [Pass]
+- Zero layout breaks on mobile for BG language: [Pass]
+
 ## [Date: 2026-06-20] - Localization & Copywriting Engine
 
 **🌐 i18n Architecture:**
