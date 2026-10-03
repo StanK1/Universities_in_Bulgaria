@@ -216,7 +216,7 @@ html[lang="bg"] body {
 }
 
 html[lang="bg"] .box > p, html[lang="bg"] .box-2 > p {
-    font-size: clamp(24px, 3vw, 36px); /* Scale down font size for longer bg text */
+    font-size: clamp(20px, 2.5vw, 32px); /* Scale down font size for longer bg text */
     padding: 0 15px;
 }
 

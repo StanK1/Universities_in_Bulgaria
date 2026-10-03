@@ -1,3 +1,24 @@
+## [Date: 2026-10-03] - Localization & Copywriting Engine
+
+**🌐 i18n Architecture:**
+- [PREVIOUSLY COMPLETED] Implemented a zero-flicker `localStorage` script inline in the HTML `<head>` for instant client-side language switching (EN / BG).
+- [PREVIOUSLY COMPLETED] Embedded an elegant language toggle into the global navigation bar, using Koda Cyan (`#4DB2C1`) for the active state indicator.
+- [NEW] Fixed SEO compliance by changing base domain protocol from `http://` to `https://` when injecting `<link rel="alternate" hreflang="...">` tags dynamically.
+- [NEW] Updated SHA-384 Subresource Integrity (SRI) hashes across HTML pages to reflect the latest `i18n.js` changes.
+
+**✍️ Copywriting & Transcreation:**
+- [NEW] Transcreated website copy to Bulgarian across `index.html`, `sofia.html`, `plovdiv.html`, and `varna.html`, maintaining the authoritative "Executive Tech" B2B tone.
+- [NEW] Refined the English copy further by removing fluff and shifting passive voice to active verbs to assert authority.
+
+**📏 UI Adaptation:**
+- [NEW] Adjusted responsive layout configurations utilizing CSS `clamp()` properties and padding adjustments in `Design.css` to gracefully handle the expansion of Cyrillic text.
+- [NEW] Enhanced accessibility by explicitly updating ARIA attributes (`aria-pressed`) on language toggles to announce active states to screen readers.
+
+**⚠️ Integrity Checks:**
+- Cyrillic font subset loaded successfully: [Pass]
+- Hreflang SEO tags implemented: [Pass]
+- Zero layout breaks on mobile for BG language: [Pass]
+
 ## [Date: 2026-06-20] - Localization & Copywriting Engine
 
 **🌐 i18n Architecture:**
