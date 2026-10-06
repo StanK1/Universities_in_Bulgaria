@@ -1,3 +1,25 @@
+## [Date: 2026-10-06] - Localization & Copywriting Engine
+
+**🌐 i18n Architecture:**
+- [PREVIOUSLY COMPLETED] Implemented zero-flicker client-side i18n architecture with instant local-storage-based `<html lang="...">` switching.
+- [NEW] Hardened SEO by migrating dynamic `hreflang` base domains to secure `https://unichoice.bg/` instead of potentially unsecure relative or file paths.
+- [NEW] Upgraded accessibility by dynamically injecting `aria-pressed="true"` / `"false"` states to the active and inactive EN/BG language toggle elements.
+- [NEW] Recalculated and applied precise SHA-384 Subresource Integrity (SRI) hashes across all `.html` pages.
+
+**✍️ Copywriting & Transcreation:**
+- [PREVIOUSLY COMPLETED] Masterfully transcreated website copy to B2B "Executive Tech" Bulgarian across all pages, emphasizing premium ROI and digital infrastructure concepts.
+- [NEW] Refined English copy further by upgrading terms (e.g., "We engineer scalable digital platforms" to "We architect cutting-edge digital platforms", "Score Calculator" to "Advanced Score Calculator") to maximize B2B impact.
+- [NEW] Transcreated the newly refined English copy into Bulgarian (e.g., "Проектираме мащабируема дигитална инфраструктура от най-висок клас") while maintaining the authoritative Executive Tech tone.
+
+**📏 UI Adaptation:**
+- [NEW] Refactored rigid container constraints in `Design.css` by changing `.box` and `.box-2` hardcoded `height: 430px;` to `min-height: 430px; height: auto;`, flawlessly accommodating 20-30% longer Cyrillic text without overflow or breakage.
+- [PREVIOUSLY COMPLETED] Standardized the global Koda Studio 60-30-10 color rule aesthetic (Void Black #000000, Clean White #FFFFFF, and Koda Cyan #4DB2C1) and Cyrillic font clamping.
+
+**⚠️ Integrity Checks:**
+- Cyrillic font subset loaded successfully: [Pass]
+- Hreflang SEO tags implemented: [Pass]
+- Zero layout breaks on mobile for BG language: [Pass]
+
 ## [Date: 2026-06-20] - Localization & Copywriting Engine
 
 **🌐 i18n Architecture:**
