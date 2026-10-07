@@ -1,3 +1,27 @@
+## [Date: 2026-10-07] - Localization & Copywriting Engine
+
+**🌐 i18n Architecture:**
+- [PREVIOUSLY COMPLETED] Initial zero-flicker client-side architecture and language toggle UI.
+- [NEW] Updated `injectHreflangTags()` in `i18n.js` to use `https://unichoice.bg/` instead of HTTP to enforce secure SEO hreflang compliance.
+- [NEW] Updated URL protocols across HTML pages from `http://unichoice.bg/specialnosti/` to `https://unichoice.bg/specialnosti/`.
+- [NEW] Recalculated and applied updated SHA-384 Subresource Integrity (SRI) hashes across all `.html` pages.
+
+**✍️ Copywriting & Transcreation:**
+- [PREVIOUSLY COMPLETED] All major sections translated to Bulgarian and baseline English copy improved in earlier cycles.
+- [NEW] Refined English copy in `index.html` to be even more authoritative ("We engineer digital platforms that accelerate enterprise technological adoption. We deploy custom code... yielding uncompromised quality").
+- [NEW] Transcreated the new text to Bulgarian maintaining the Executive Tech tone ("Изграждаме дигитални платформи...", "гарантирайки безкомпромисно качество").
+
+**📏 UI Adaptation:**
+- [PREVIOUSLY COMPLETED] Adjusted responsive layout configurations (utilizing CSS `clamp()` properties for fonts) and padding to handle 20-30% Cyrillic text expansion without breaking components.
+- [PREVIOUSLY COMPLETED] Adopted CSS Flexbox layout for navigation headers to ensure correct wrapping.
+- [PREVIOUSLY COMPLETED] Maintained the strict 60-30-10 absolute color rule (Void Black `#000000`, Clean White `#FFFFFF`, Koda Cyan `#4DB2C1`).
+- [NEW] Updated `updateToggleUI` in `i18n.js` to dynamically add/remove `aria-pressed` attributes on the language toggles for improved accessibility for screen readers.
+
+**⚠️ Integrity Checks:**
+- Cyrillic font subset loaded successfully: [Pass]
+- Hreflang SEO tags implemented: [Pass]
+- Zero layout breaks on mobile for BG language: [Pass]
+
 ## [Date: 2026-06-20] - Localization & Copywriting Engine
 
 **🌐 i18n Architecture:**
