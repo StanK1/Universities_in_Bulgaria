@@ -1,3 +1,30 @@
+## [Date: 2026-10-08] - Localization & Copywriting Engine
+
+**🌐 i18n Architecture:**
+- [NEW] Updated `i18n.js` to ensure the base domain uses `https://` for secure SEO compliance (`<link rel="alternate" hreflang="...">`).
+- [NEW] Enhanced the language toggle UI to dynamically update the `aria-pressed` attribute for accessibility.
+- [NEW] Updated Subresource Integrity (SRI) SHA-384 hash for `i18n.js` across all HTML files.
+- [PREVIOUSLY COMPLETED] Implemented a zero-flicker client-side architecture using a synchronous inline script to instantly set the `<html>` 'lang' attribute from `localStorage`.
+- [PREVIOUSLY COMPLETED] Built and integrated a seamless language toggle (EN / BG) into the global navigation bar utilizing Koda Cyan (`#4DB2C1`) for the active state.
+- [PREVIOUSLY COMPLETED] Dynamically injected `hreflang` tags to maintain SEO integrity.
+
+**✍️ Copywriting & Transcreation:**
+- [NEW] Refined English copy across `index.html` to cut fluff and replace passive voice with active, powerful executive verbs (e.g., changing "We accelerate enterprise technological adoption. We deploy custom code" to "We accelerate enterprise technology adoption. We architect custom code").
+- [NEW] Transcreated Bulgarian copy across `index.html` ensuring an "Executive Tech" B2B tone (e.g., changing "Ускоряваме технологичното приемане..." to "Ускоряваме технологичната интеграция на корпоративно ниво. Проектираме ръчно писан код").
+- [PREVIOUSLY COMPLETED] Transcreated overall website copy into professional, high-end Bulgarian utilizing premium terminology ("Изграждаме дигитална инфраструктура", "Възвръщаемост на инвестицията") and formal plural address ("Вие").
+- [PREVIOUSLY COMPLETED] English copy audited and optimized for impact.
+
+**📏 UI Adaptation:**
+- [NEW] Changed fixed height `height: 430px;` to `min-height: 430px; height: auto;` for `.box` and `.box-2` in `Design.css` to accommodate the 20-30% longer Cyrillic text dynamically without overflow.
+- [PREVIOUSLY COMPLETED] Converted fixed-height navigations to CSS Flexbox.
+- [PREVIOUSLY COMPLETED] Applied CSS `clamp()` for responsive font sizes to prevent layout breaks for `.lang-bg` contexts.
+- [PREVIOUSLY COMPLETED] Strictly enforced the 60-30-10 color rule aesthetic: Void Black (#000000), Clean White (#FFFFFF), and Koda Cyan (#4DB2C1).
+
+**⚠️ Integrity Checks:**
+- Cyrillic font subset loaded successfully: [Pass]
+- Hreflang SEO tags implemented: [Pass]
+- Zero layout breaks on mobile for BG language: [Pass]
+
 ## [Date: 2026-06-20] - Localization & Copywriting Engine
 
 **🌐 i18n Architecture:**
