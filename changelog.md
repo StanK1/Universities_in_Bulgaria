@@ -1,3 +1,25 @@
+## [Date: 2026-10-09] - Localization & Copywriting Engine
+
+**🌐 i18n Architecture:**
+- [PREVIOUSLY COMPLETED] Initial zero-flicker client-side architecture and language toggle UI.
+- [NEW] Updated base domain to HTTPS for SEO hreflang tags in `i18n.js`.
+- [NEW] Added dynamic `aria-pressed` accessibility attributes to language toggle buttons in `i18n.js`.
+- [NEW] Recalculated and updated SHA-384 Subresource Integrity (SRI) hashes across all `.html` pages to reflect the modified `i18n.js`.
+
+**✍️ Copywriting & Transcreation:**
+- [PREVIOUSLY COMPLETED] Initial translation of English text into Bulgarian "Executive Tech" tone.
+- [NEW] Refined English B2B copy across `index.html` and `sofia.html` (e.g., updating "We engineer" to "We architect", and "We accelerate enterprise technological adoption" to "We accelerate enterprise digital transformation").
+- [NEW] Updated corresponding Bulgarian transcreations to match the new English phrasing (e.g., updating "Изграждаме" to "Проектираме", and "Ускоряваме технологичното приемане" to "Ускоряваме дигиталната трансформация").
+
+**📏 UI Adaptation:**
+- [PREVIOUSLY COMPLETED] Verified 20-30% Cyrillic expansion accommodations and strict 60-30-10 Koda Studio color rules.
+- [NEW] Replaced rigid `height: 430px;` with responsive `min-height: 430px; height: auto;` in `Design.css` for `.box` and `.box-2` to robustly accommodate longer Cyrillic text lines.
+
+**⚠️ Integrity Checks:**
+- Cyrillic font subset loaded successfully: [Pass]
+- Hreflang SEO tags implemented: [Pass]
+- Zero layout breaks on mobile for BG language: [Pass]
+
 ## [Date: 2026-06-20] - Localization & Copywriting Engine
 
 **🌐 i18n Architecture:**
