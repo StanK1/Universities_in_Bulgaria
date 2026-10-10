@@ -1,3 +1,26 @@
+## [Date: 2026-10-10] - Localization & Copywriting Engine
+
+**🌐 i18n Architecture:**
+- [NEW] Updated the dynamic SEO tag base URL in `i18n.js` to strictly enforce `https://` ensuring secure SEO compliance.
+- [NEW] Enhanced `updateToggleUI` in `i18n.js` to dynamically apply the `aria-pressed` attribute to the language toggle for improved screen reader accessibility.
+- [NEW] Generated and updated SHA-384 Subresource Integrity (SRI) hashes across all `.html` templates to reflect the `i18n.js` improvements.
+- [PREVIOUSLY COMPLETED] Built and integrated a seamless language toggle (EN / BG) into the global navigation bar utilizing Koda Cyan (`#4DB2C1`) for the active state.
+- [PREVIOUSLY COMPLETED] Implemented instantaneous client-side state management for language switching via `localStorage`.
+
+**✍️ Copywriting & Transcreation:**
+- [NEW] Transcreated website copy for the homepage (`index.html`) and subpages (`sofia.html`, `plovdiv.html`, `varna.html`, `baloobrazuvane.html`) into professional, high-end Bulgarian, utilizing premium terminology ("Изграждаме дигитална инфраструктура", "Ръчно писан код", "Възвръщаемост на инвестицията").
+- [NEW] Audited and refined English copy across all pages to strengthen B2B impact and cut fluff (e.g., changed to "We architect robust digital platforms" and "We deploy custom code").
+- [PREVIOUSLY COMPLETED] Refined English headlines sitewide to replace passive voice with active, powerful verbs.
+
+**📏 UI Adaptation:**
+- [NEW] Fixed layout constraints in `Design.css` by upgrading fixed-height containers (`height: 430px;`) to use `min-height: 430px; height: auto;` ensuring flawless responsive rendering for the 20-30% longer Cyrillic text expansions without breaking cards.
+- [PREVIOUSLY COMPLETED] Maintained the strict 60-30-10 color rule aesthetic (Void Black, Clean White, Koda Cyan) unconditionally across all localized views.
+
+**⚠️ Integrity Checks:**
+- Cyrillic font subset loaded successfully: [Pass]
+- Hreflang SEO tags implemented: [Pass]
+- Zero layout breaks on mobile for BG language: [Pass]
+
 ## [Date: 2026-06-20] - Localization & Copywriting Engine
 
 **🌐 i18n Architecture:**
