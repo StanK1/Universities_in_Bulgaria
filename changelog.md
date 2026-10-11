@@ -1,3 +1,28 @@
+## [Date: 2026-10-11] - Localization & Copywriting Engine
+
+**🌐 i18n Architecture:**
+- [NEW] Updated `baseDomain` in `i18n.js` to enforce `https://` for better SEO integrity.
+- [NEW] Added dynamic ARIA accessibility attributes (`aria-pressed`) to the language toggle buttons in `i18n.js`.
+- [NEW] Recalculated and applied updated SHA-384 Subresource Integrity (SRI) hashes across all `.html` pages.
+- [PREVIOUSLY COMPLETED] Implemented a zero-flicker client-side routing and state management system using `localStorage` and dynamic CSS display logic.
+- [PREVIOUSLY COMPLETED] An elegant 'EN / BG' language toggle was embedded into the global navigation bar, leveraging Koda Cyan for active state indications.
+- [PREVIOUSLY COMPLETED] SEO Integrity secured by dynamically injecting `<link rel="alternate" hreflang="en/bg">` tags based on active locale.
+
+**✍️ Copywriting & Transcreation:**
+- [NEW] Implemented new incremental transcreations to global navigation to enforce strict Executive Tech B2B authority (e.g., "Академични специализации", "Стратегически хъбове", "ROI Калкулатор").
+- [PREVIOUSLY COMPLETED] Masterfully transcreated all structural content across `index.html`, `sofia.html`, `plovdiv.html`, `varna.html`, and `baloobrazuvane.html` into B2B Executive Tech Bulgarian (utilizing professional IT terminology like "Изграждаме дигитална инфраструктура", "Ръчно писан код", "Висока производителност", and "Възвръщаемост на инвестицията" (ROI)).
+- [PREVIOUSLY COMPLETED] Refined the English copy cutting fluff and substituting passive tones with active, powerful executive verbs.
+
+**📏 UI Adaptation:**
+- [NEW] Converted fixed height constraints on `.box` and `.box-2` to flexible `min-height: 430px; height: auto;` to eliminate clipping for expanded Cyrillic text content.
+- [PREVIOUSLY COMPLETED] Adapted container paddings and scaled responsive font metrics utilizing `clamp()` within `Design.css`.
+- [PREVIOUSLY COMPLETED] Maintained the strict 60-30-10 absolute color rule (Void Black `#000000`, Clean White `#FFFFFF`, Koda Cyan `#4DB2C1`).
+
+**⚠️ Integrity Checks:**
+- Cyrillic font subset loaded successfully: [Pass]
+- Hreflang SEO tags implemented: [Pass]
+- Zero layout breaks on mobile for BG language: [Pass]
+
 ## [Date: 2026-06-20] - Localization & Copywriting Engine
 
 **🌐 i18n Architecture:**
