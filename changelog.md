@@ -1,3 +1,31 @@
+## [Date: 2026-10-12] - Localization & Copywriting Engine
+
+**🌐 i18n Architecture:**
+- [NEW] Configured `i18n.js` SEO link generation to securely point to `https://unichoice.bg/` for canonical mappings.
+- [NEW] Appended `aria-pressed` dynamic state management logic to the global language toggler loop inside `updateToggleUI` in `i18n.js` ensuring full accessibility compliance.
+- [PREVIOUSLY COMPLETED] Implemented a zero-flicker client-side routing and state management system using `localStorage` and dynamic CSS display logic.
+- [PREVIOUSLY COMPLETED] An elegant 'EN / BG' language toggle was embedded into the global navigation bar.
+- [PREVIOUSLY COMPLETED] SEO Integrity secured by dynamically injecting `<link rel="alternate" hreflang="en/bg">` tags based on active locale.
+- [PREVIOUSLY COMPLETED] Enhanced performance and security by loading logic via `defer` and applying SRI SHA-384 hashes.
+
+**✍️ Copywriting & Transcreation:**
+- [NEW] Refined English B2B authority texts shifting passive framing toward active architectural terminology (e.g., changing "We accelerate enterprise technological adoption" to "We architect enterprise digital platforms").
+- [NEW] Masterfully executed precise B2B transcreations to high-tier Bulgarian addressing executive stakeholders ("Изграждаме дигитална инфраструктура на корпоративно ниво"), stripping legacy passive constructions.
+- [PREVIOUSLY COMPLETED] Transcreated structural content across all index pages to B2B Executive Tech Bulgarian (utilizing professional IT terminology like "Ръчно писан код", "Висока производителност", and "Възвръщаемост на инвестицията" (ROI)).
+- [PREVIOUSLY COMPLETED] Refined the English copy cutting fluff and substituting passive tones with active, powerful executive verbs.
+- [PREVIOUSLY COMPLETED] Added correct `data-title-bg` attributes across HTML files for localized dynamically swapped document titles.
+
+**📏 UI Adaptation:**
+- [NEW] Standardized `div.box, div.box-2` to utilize `min-height: 430px; height: auto;` in `Design.css`, granting vertical fluidity for Cyrillic overflow handling.
+- [NEW] Scrubbed non-canonical colors (e.g., `white`, `rgb(255, 255, 255)`) from UI buttons and navigation links across `Design.css`, enforcing the exact Clean White `#FFFFFF` required by the 60-30-10 Koda constraint.
+- [PREVIOUSLY COMPLETED] Adapted container paddings and scaled responsive font metrics utilizing `clamp()` within `Design.css` to accommodate the 20-30% character expansion intrinsic to Cyrillic script.
+- [PREVIOUSLY COMPLETED] Maintained the strict 60-30-10 absolute color rule (Void Black `#000000`, Clean White `#FFFFFF`, Koda Cyan `#4DB2C1`), completely removing legacy styles from `Design.css`.
+
+**⚠️ Integrity Checks:**
+- Cyrillic font subset loaded successfully: [Pass]
+- Hreflang SEO tags implemented: [Pass]
+- Zero layout breaks on mobile for BG language: [Pass]
+
 ## [Date: 2026-06-20] - Localization & Copywriting Engine
 
 **🌐 i18n Architecture:**
