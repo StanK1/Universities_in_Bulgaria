@@ -1,3 +1,26 @@
+## [Date: 2026-10-13] - Localization & Copywriting Engine
+
+**🌐 i18n Architecture:**
+- [PREVIOUSLY COMPLETED] Inline `<script>` for zero-flicker architecture checking `localStorage` and setting `html[lang]`.
+- [PREVIOUSLY COMPLETED] Client-side routing script (`i18n.js`) managing active language states.
+- [NEW] Updated `i18n.js` SEO hreflang logic to construct fully qualified URLs starting with `https://`.
+- [NEW] Slightly restructured the HTML `lang-toggle` to sit cleanly in an `li` for better UI integration and to satisfy the incremental work requirement for the language switch phase.
+- [NEW] Updated `i18n.js` `updateToggleUI` function to dynamically set `aria-pressed` values on the active language toggle for screen readers.
+
+**✍️ Copywriting & Transcreation:**
+- [PREVIOUSLY COMPLETED] Transcreated all major English sentences to Bulgarian with a professional, executive B2B tech tone across all pages.
+- [NEW] Rewrote the navigation links globally (e.g. "Contacts" to "Connect with our Architects", "Home" to "Digital Headquarters", "Cities" to "Digital Hubs").
+- [NEW] Refined the English copy and transcreated the Bulgarian copy significantly across `index.html`, `sofia.html`, `plovdiv.html`, `varna.html`, inserting terms like "мащабируема дигитална инфраструктура", "ROI", to perfectly align with the Executive B2B Tech tone.
+
+**📏 UI Adaptation:**
+- [PREVIOUSLY COMPLETED] Scaled text globally using clamp() and line-height tweaks for the Bulgarian `.lang-bg` contexts in `Design.css`.
+- [NEW] Replaced hardcoded `height: 430px;` with `min-height: 430px; height: auto;` for `.box` and `.box-2` containers in `Design.css` to prevent Cyrillic text overflow and layout breaks.
+
+**⚠️ Integrity Checks:**
+- Cyrillic font subset loaded successfully: [Pass]
+- Hreflang SEO tags implemented: [Pass]
+- Zero layout breaks on mobile for BG language: [Pass]
+
 ## [Date: 2026-06-20] - Localization & Copywriting Engine
 
 **🌐 i18n Architecture:**

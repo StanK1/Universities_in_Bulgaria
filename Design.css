@@ -163,7 +163,8 @@ top: 135px;
 
 
 div.box,div.box-2 {
-  height: 430px;
+  min-height: 430px;
+  height: auto;
   width: 400px;
   background: #000000;
   border-radius: 20px;
@@ -273,4 +274,8 @@ li a:hover, .dropdown:hover .dropbtn {
 .lang-toggle span.active {
     background-color: #4DB2C1; /* Koda Cyan */
     color: #000000; /* Void Black */
+}
+
+li.lang-toggle-wrapper {
+    margin-left: auto; /* Push it to the right */
 }
