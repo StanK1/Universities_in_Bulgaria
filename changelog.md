@@ -1,3 +1,24 @@
+## [Date: 2026-10-14] - Localization & Copywriting Engine
+
+**🌐 i18n Architecture:**
+- [PREVIOUSLY COMPLETED] Implemented a zero-flicker `localStorage` script inline in the HTML `<head>` for instant client-side language switching (EN / BG).
+- [PREVIOUSLY COMPLETED] Embedded an elegant language toggle into the global navigation bar, using Koda Cyan (`#4DB2C1`) for the active state indicator.
+- [PREVIOUSLY COMPLETED] Automatically injected correct `<link rel="alternate" hreflang="...">` tags dynamically to maintain SEO integrity across all `.html` pages.
+- [NEW] Added `aria-pressed` dynamic state management to `.lang-toggle span` in `i18n.js` to ensure the active language state is fully accessible to screen readers. Recalculated and updated the SHA-384 Subresource Integrity (SRI) hash across all HTML files.
+
+**✍️ Copywriting & Transcreation:**
+- [PREVIOUSLY COMPLETED] Masterfully transcreated website copy to Bulgarian across `sofia.html`, `plovdiv.html`, `varna.html`, and `baloobrazuvane.html` maintaining the authoritative "Executive Tech" B2B tone.
+- [NEW] Refined English and Bulgarian core value proposition copy in `index.html`. Shifted to active verbs ("We architect and deploy custom code") and enhanced the B2B tone ("Изграждаме дигитална инфраструктура").
+
+**📏 UI Adaptation:**
+- [PREVIOUSLY COMPLETED] Maintained the strict Koda Studio 60-30-10 color rule aesthetic (Void Black `#000000`, Clean White `#FFFFFF`, and Koda Cyan `#4DB2C1`).
+- [NEW] Adapted `Design.css` by changing fixed heights (`height: 430px;`) for `.box` and `.box-2` to responsive dimensions (`min-height: 430px; height: auto;`) to prevent overflow when displaying 20-30% longer Cyrillic translations.
+
+**⚠️ Integrity Checks:**
+- Cyrillic font subset loaded successfully: [Pass]
+- Hreflang SEO tags implemented: [Pass]
+- Zero layout breaks on mobile for BG language: [Pass]
+
 ## [Date: 2026-06-20] - Localization & Copywriting Engine
 
 **🌐 i18n Architecture:**
