@@ -1,3 +1,27 @@
+## [Date: 2026-11-05] - Localization & Copywriting Engine
+
+**🌐 i18n Architecture:**
+- [PREVIOUSLY COMPLETED] Implemented a zero-flicker `localStorage` script inline in the HTML `<head>` for instant client-side language switching (EN / BG).
+- [PREVIOUSLY COMPLETED] Embedded an elegant language toggle into the global navigation bar, using Koda Cyan (`#4DB2C1`) for the active state indicator.
+- [PREVIOUSLY COMPLETED] Automatically injected correct `<link rel="alternate" hreflang="...">` tags dynamically to maintain SEO integrity across all `.html` pages.
+- [NEW] Dynamically update `aria-pressed` on language toggles in `i18n.js` to enhance accessibility for screen readers.
+- [NEW] Corrected and updated SHA-384 Subresource Integrity (SRI) hashes across scripts (like `i18n.js`).
+
+**✍️ Copywriting & Transcreation:**
+- [PREVIOUSLY COMPLETED] Masterfully transcreated website copy to Bulgarian across `index.html`, `sofia.html`, `plovdiv.html`, and `varna.html`, maintaining the authoritative "Executive Tech" B2B tone.
+- [NEW] Transcreated additional blocks in `index.html` avoiding literal translations and opting for "В София са стратегически разположени 22 от 52..." and "Ние изграждаме дигитална инфраструктура от най-високо ниво...".
+- [NEW] Refined English copy in `index.html` by replacing passive/weak phrasing with active, powerful executive verbs (e.g., "We architect scalable digital platforms", "We engineer enterprise technological integration").
+
+**📏 UI Adaptation:**
+- [PREVIOUSLY COMPLETED] Adjusted responsive layout configurations utilizing CSS `clamp()` properties for fonts to handle Cyrillic expansion.
+- [NEW] Changed fixed height constraints on `.box` and `.box-2` to `min-height: 430px; height: auto;` in `Design.css` to gracefully handle the 20-30% expansion of Cyrillic text without clipping or breaking layouts.
+- [PREVIOUSLY COMPLETED] Strictly enforced the Koda Studio 60-30-10 color rule aesthetic.
+
+**⚠️ Integrity Checks:**
+- Cyrillic font subset loaded successfully: [Pass]
+- Hreflang SEO tags implemented: [Pass]
+- Zero layout breaks on mobile for BG language: [Pass]
+
 ## [Date: 2026-06-20] - Localization & Copywriting Engine
 
 **🌐 i18n Architecture:**
