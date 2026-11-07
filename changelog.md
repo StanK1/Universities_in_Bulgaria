@@ -1,3 +1,23 @@
+## [Date: 2026-11-07] - Localization & Copywriting Engine
+
+**🌐 i18n Architecture:**
+- [PREVIOUSLY COMPLETED] Initial zero-flicker client-side architecture and language toggle UI.
+- [NEW] Updated `i18n.js` to securely serve `hreflang` SEO tags via HTTPS and added `aria-pressed` dynamic state management to the UI language toggle for screen-reader accessibility.
+- [NEW] Recalculated the SHA-384 Integrity headers across all HTML nodes to reflect updates.
+
+**✍️ Copywriting & Transcreation:**
+- [PREVIOUSLY COMPLETED] Transcreated overarching structural content and copy for the majority of the site into B2B Executive Tech Bulgarian.
+- [NEW] Refined English copy in `varna.html` to increase impact ("Varna operates as an elite academic hub") and transcreated this localized edit into Bulgarian ("Варна оперира като елитен академичен хъб").
+
+**📏 UI Adaptation:**
+- [PREVIOUSLY COMPLETED] Addressed foundational responsive design fixes to accommodate Cyrillic text expansions.
+- [NEW] Modified `Design.css` to update the fixed height (`height: 430px`) on `.box` and `.box-2` UI cards to a scalable `min-height: 430px; height: auto;` ensuring flawless responsive flow for longer Bulgarian words.
+
+**⚠️ Integrity Checks:**
+- Cyrillic font subset loaded successfully: [Pass]
+- Hreflang SEO tags implemented: [Pass]
+- Zero layout breaks on mobile for BG language: [Pass]
+
 ## [Date: 2026-06-20] - Localization & Copywriting Engine
 
 **🌐 i18n Architecture:**
