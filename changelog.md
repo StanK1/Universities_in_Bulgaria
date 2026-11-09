@@ -1,3 +1,26 @@
+## [Date: 2026-11-09] - Localization & Copywriting Engine
+
+**🌐 i18n Architecture:**
+- [NEW] Updated `i18n.js` to use `https://` instead of `http://` for `baseDomain` when injecting `hreflang` tags to ensure secure SEO compliance.
+- [NEW] Computed and applied the new SHA-384 Subresource Integrity (SRI) hashes across all `.html` files for the updated `i18n.js`.
+- [PREVIOUSLY COMPLETED] Built and integrated a seamless language toggle (EN / BG) into the global navigation bar.
+- [PREVIOUSLY COMPLETED] Implemented best-practice state management and instantaneous language switching.
+
+**✍️ Copywriting & Transcreation:**
+- [NEW] Refined English copy in `sofia.html` and `varna.html` to adopt stronger B2B active structures (e.g., "guaranteeing unprecedented ROI for your ambitious business ventures" and "strategic academic node").
+- [NEW] Masterfully transcreated the updated content in `sofia.html` and `varna.html` to Bulgarian, maintaining a high-end "Executive Tech" tone (e.g., "безпрецедентна възвръщаемост на инвестицията" and "стратегически академичен хъб").
+- [PREVIOUSLY COMPLETED] Translated and rewrote all website copy from English to Bulgarian avoiding literal translations.
+- [PREVIOUSLY COMPLETED] Audited existing English copy to cut fluff and replace passive voice.
+
+**📏 UI Adaptation:**
+- [NEW] Adjusted layout in `Design.css` by converting the fixed height of `.box` and `.box-2` elements from `height: 430px;` to `min-height: 430px;` with `height: auto;` to flexibly accommodate the 20-30% expansion of Cyrillic text without clipping or overflow.
+- [PREVIOUSLY COMPLETED] Ensured that longer Bulgarian words do not break buttons or overflow cards.
+
+**⚠️ Integrity Checks:**
+- Cyrillic font subset loaded successfully: [Pass]
+- Hreflang SEO tags implemented: [Pass]
+- Zero layout breaks on mobile for BG language: [Pass]
+
 ## [Date: 2026-06-20] - Localization & Copywriting Engine
 
 **🌐 i18n Architecture:**
