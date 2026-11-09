@@ -1,126 +1,113 @@
 <!DOCTYPE html>
+
 <html lang="bg">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="icon" type="image/png" href="img/icon/favicon1.png">
-		<script>!function(){var e=localStorage.getItem("siteLang")||"bg";document.documentElement.lang=e}();</script>
-		<title data-title-en="Varna Hub | High Performance Digital Infrastructure" data-title-bg="Варна Хъб | Изграждаме дигитална инфраструктура">Варна Хъб | Изграждаме дигитална инфраструктура</title>
-		<link rel="stylesheet" href="Design.css">
-		
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
-  
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap&subset=cyrillic" rel="stylesheet">
-  <link href="https://allfont.net/allfont.css?fonts=roboto-thin" rel="stylesheet" type="text/css" />
-
-  <script src="i18n.js" defer integrity="sha384-XC6StHDnjQpMKglS4jKiPibCdFm0XuWVAC95+aAJ2pPazbO+sPqn3RAZAX0+r52d" crossorigin="anonymous"></script>
-  <script src="animations.js" defer integrity="sha384-izYT5aJOCMRqC+RhXGsWfvzhu2vANLAb+s+pogaUi4sGgJ9G5CTK3qcioS4FFQ76" crossorigin="anonymous"></script>
-	</head>
-	<body>
-		<div class="flex demo">
-
-			<div class="slideshow-container">
-
-				<div class="mySlides fade">
-
-				  <img class="top" src="img/lego4_varna.jpg" height="281" width="1500" alt="Varna Slide"/>
-				  <div class="text"></div>
-				</div>
-				
-				<div class="mySlides fade">
-				  <img class="top" src="img/lego4_gabrovo.jpg" height="281" width="1500" alt="Gabrovo Slide"/>
-				  <div class="text"></div>
-				</div>
-				
-				<div class="mySlides fade">
-				  <img class="bottom" src="img/Plovdiv.jpg" height="281" width="1500" alt="Plovdiv Slide"/>
-				  <div class="text"></div>
-				</div>
-
-				<div class="mySlides fade">
-					<img class="top" src="img/lego2.jpg" height="281" width="1500" alt="Lego Slide"/>
-					<div class="text"></div>
-				  </div>
-
-				<a class="prev" href="javascript:void(0);" aria-label="Previous slide" title="Previous slide" onclick="plusSlides(-1)">❮</a>
-				<a class="next" href="javascript:void(0);" aria-label="Next slide" title="Next slide" onclick="plusSlides(1)">❯</a>
-				
-				</div>
-				
-				<div style="text-align:center">
-				  <a href="javascript:void(0);" class="dot" aria-label="Go to slide 1" title="Go to slide 1" onclick="currentSlide(1)"></a>
-				  <a href="javascript:void(0);" class="dot" aria-label="Go to slide 2" title="Go to slide 2" onclick="currentSlide(2)"></a>
-				  <a href="javascript:void(0);" class="dot" aria-label="Go to slide 3" title="Go to slide 3" onclick="currentSlide(3)"></a>
-				</div>
-
-		  </div>
-
-		<div class="topnav">
-	<ul>
-		<li><a href="index.html" id="logo1"><img width="40" height="40" class="logo" src="img/icon/favicon2.png" alt="Logo"></a></li>
-		<li>
-			<a href="index.html">
-				<span class="lang-en">Home</span>
-				<span class="lang-bg">Начало</span>
-			</a>
-		</li>
-		<li>
-			<a href="http://unichoice.bg/specialnosti/">
-				<span class="lang-en">University Specialties</span>
-				<span class="lang-bg">Специалности по университети</span>
-			</a>
-		</li>
-		<li class="dropdown">
-		  <a href="javascript:void(0)" class="dropbtn">
-			<span class="lang-en">Cities</span>
-			<span class="lang-bg">Градове</span>
-		  </a>
-		  <div class="dropdown-content">
-			<a href="sofia.html">
-				<span class="lang-en">Sofia</span>
-				<span class="lang-bg">София</span>
-			</a>
-			<a href="plovdiv.html">
-				<span class="lang-en">Plovdiv</span>
-				<span class="lang-bg">Пловдив</span>
-			</a>
-			<a href="varna.html">
-				<span class="lang-en">Varna</span>
-				<span class="lang-bg">Варна</span>
-			</a>
-		  </div>
-		</li>
-		<li>
-			<a href="baloobrazuvane.html">
-				<span class="lang-en">Score Calculator</span>
-				<span class="lang-bg">Калкулатор на бал</span>
-			</a>
-		</li>
-		<li>
-			<a href="https://github.com/StanK1">
-				<span class="lang-en">Contacts</span>
-				<span class="lang-bg">Контакти</span>
-			</a>
-		</li>
-	</ul>
-	<div class="lang-toggle-wrapper">
-		<button class="lang-toggle">
-			<span data-lang="en">EN</span> / <span data-lang="bg" class="active">BG</span>
-		</button>
-	</div>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="img/icon/favicon1.png" rel="icon" type="image/png"/>
+<script>!function(){var e=localStorage.getItem("siteLang")||"bg";document.documentElement.lang=e}();</script>
+<title data-title-bg="Варна Хъб | Изграждаме дигитална инфраструктура" data-title-en="Varna Hub | High Performance Digital Infrastructure">Варна Хъб | Изграждаме дигитална инфраструктура</title>
+<link href="Design.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/picnic" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap&amp;subset=cyrillic" rel="stylesheet"/>
+<link href="https://allfont.net/allfont.css?fonts=roboto-thin" rel="stylesheet" type="text/css"/>
+<script crossorigin="anonymous" defer="" integrity="sha384-hPSMELmP0zuvYDjOrkFxdXC6fS15YOFPgPr68jHzjXkc5fR2V7NIGQTR+rLOR8sk" src="i18n.js"></script>
+<script crossorigin="anonymous" defer="" integrity="sha384-izYT5aJOCMRqC+RhXGsWfvzhu2vANLAb+s+pogaUi4sGgJ9G5CTK3qcioS4FFQ76" src="animations.js"></script>
+</head>
+<body>
+<div class="flex demo">
+<div class="slideshow-container">
+<div class="mySlides fade">
+<img alt="Varna Slide" class="top" height="281" src="img/lego4_varna.jpg" width="1500"/>
+<div class="text"></div>
 </div>
-		<div class="bg_varna"></div>
-		<h1 style="text-align:center; color: #FFFFFF;">
-			<span class="lang-en">Varna</span>
-			<span class="lang-bg">Варна</span>
-		</h1>
-		<p style="color: #FFFFFF; padding: 0 20px;">
-			<span class="lang-en">We engineer high performance marine and economic technologies. Varna stands out as a critical academic node mentoring over 30,000 students. Anchored by the Institute of Oceanology and advanced naval architecture research, Varna's digital infrastructure produces unparalleled ROI for your enterprise.</span>
-			<span class="lang-bg">Изграждаме дигитална инфраструктура с изключителен фокус върху морски и икономически технологии. Варна е ключов академичен хъб, в който се обучават над 30 000 студенти. Ръчно писан код и висока производителност се интегрират с напреднали изследвания в Института по океанология. Тази технологична екосистема гарантира безкомпромисна възвръщаемост на инвестицията за Вашия бизнес.</span>
-		</p>
-		<div style="text-align: center; margin-top: 20px;">
-			<img width="580" height="auto" src="img/varna/ecomomic/university-economics.jpg" alt="University of Economics Varna" style="margin: 10px; border-radius: 5%;">
-			<img width="490" height="auto" src="img/varna/vfu/VFU1.JPG" alt="Varna Free University" style="margin: 10px; border-radius: 5%;">
-		</div>
-	</body>
+<div class="mySlides fade">
+<img alt="Gabrovo Slide" class="top" height="281" src="img/lego4_gabrovo.jpg" width="1500"/>
+<div class="text"></div>
+</div>
+<div class="mySlides fade">
+<img alt="Plovdiv Slide" class="bottom" height="281" src="img/Plovdiv.jpg" width="1500"/>
+<div class="text"></div>
+</div>
+<div class="mySlides fade">
+<img alt="Lego Slide" class="top" height="281" src="img/lego2.jpg" width="1500"/>
+<div class="text"></div>
+</div>
+<a aria-label="Previous slide" class="prev" href="javascript:void(0);" onclick="plusSlides(-1)" title="Previous slide">❮</a>
+<a aria-label="Next slide" class="next" href="javascript:void(0);" onclick="plusSlides(1)" title="Next slide">❯</a>
+</div>
+<div style="text-align:center">
+<a aria-label="Go to slide 1" class="dot" href="javascript:void(0);" onclick="currentSlide(1)" title="Go to slide 1"></a>
+<a aria-label="Go to slide 2" class="dot" href="javascript:void(0);" onclick="currentSlide(2)" title="Go to slide 2"></a>
+<a aria-label="Go to slide 3" class="dot" href="javascript:void(0);" onclick="currentSlide(3)" title="Go to slide 3"></a>
+</div>
+</div>
+<div class="topnav">
+<ul>
+<li><a href="index.html" id="logo1"><img alt="Logo" class="logo" height="40" src="img/icon/favicon2.png" width="40"/></a></li>
+<li>
+<a href="index.html">
+<span class="lang-en">Home</span>
+<span class="lang-bg">Начало</span>
+</a>
+</li>
+<li>
+<a href="http://unichoice.bg/specialnosti/">
+<span class="lang-en">University Specialties</span>
+<span class="lang-bg">Специалности по университети</span>
+</a>
+</li>
+<li class="dropdown">
+<a class="dropbtn" href="javascript:void(0)">
+<span class="lang-en">Cities</span>
+<span class="lang-bg">Градове</span>
+</a>
+<div class="dropdown-content">
+<a href="sofia.html">
+<span class="lang-en">Sofia</span>
+<span class="lang-bg">София</span>
+</a>
+<a href="plovdiv.html">
+<span class="lang-en">Plovdiv</span>
+<span class="lang-bg">Пловдив</span>
+</a>
+<a href="varna.html">
+<span class="lang-en">Varna</span>
+<span class="lang-bg">Варна</span>
+</a>
+</div>
+</li>
+<li>
+<a href="baloobrazuvane.html">
+<span class="lang-en">Score Calculator</span>
+<span class="lang-bg">Калкулатор на бал</span>
+</a>
+</li>
+<li>
+<a href="https://github.com/StanK1">
+<span class="lang-en">Contacts</span>
+<span class="lang-bg">Контакти</span>
+</a>
+</li>
+</ul>
+<div class="lang-toggle-wrapper">
+<button class="lang-toggle">
+<span data-lang="en">EN</span> / <span class="active" data-lang="bg">BG</span>
+</button>
+</div>
+</div>
+<div class="bg_varna"></div>
+<h1 style="text-align:center; color: #FFFFFF;">
+<span class="lang-en">Varna</span>
+<span class="lang-bg">Варна</span>
+</h1>
+<p style="color: #FFFFFF; padding: 0 20px;">
+<span class="lang-en">We engineer high performance marine and economic technologies. Varna stands out as a strategic academic node mentoring over 30,000 students. Anchored by the Institute of Oceanology and advanced naval architecture research, Varna's digital infrastructure produces unparalleled ROI for your enterprise.</span>
+<span class="lang-bg">Изграждаме дигитална инфраструктура с изключителен фокус върху морски и икономически технологии. Варна е стратегически академичен хъб, в който се обучават над 30 000 студенти. Ръчно писан код и висока производителност се интегрират с напреднали изследвания в Института по океанология. Тази технологична екосистема гарантира безкомпромисна възвръщаемост на инвестицията за Вашия бизнес.</span>
+</p>
+<div style="text-align: center; margin-top: 20px;">
+<img alt="University of Economics Varna" height="auto" src="img/varna/ecomomic/university-economics.jpg" style="margin: 10px; border-radius: 5%;" width="580"/>
+<img alt="Varna Free University" height="auto" src="img/varna/vfu/VFU1.JPG" style="margin: 10px; border-radius: 5%;" width="490"/>
+</div>
+</body>
 </html>
