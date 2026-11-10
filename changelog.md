@@ -1,3 +1,25 @@
+## [Date: 2026-11-10] - Localization & Copywriting Engine
+
+**🌐 i18n Architecture:**
+- [NEW] Updated `i18n.js` base domain to use `https://unichoice.bg/` instead of `http` for SEO link generation.
+- [NEW] Computed and updated the SHA-384 Subresource Integrity hash for `i18n.js` in all HTML files.
+- [PREVIOUSLY COMPLETED] Implemented a zero-flicker client-side i18n architecture using `localStorage` and a language toggle.
+- [PREVIOUSLY COMPLETED] Injected dynamic SEO tags (`<link rel="alternate" hreflang="...">`) to maintain SEO integrity.
+
+**✍️ Copywriting & Transcreation:**
+- [NEW] Refined English copy across files changing passive voice to active verbs like "We architect scalable digital platforms".
+- [NEW] Transcreated Bulgarian copy in `index.html` and other files maintaining authoritative "Executive Tech" B2B tone ("Проектираме мащабируема дигитална инфраструктура").
+- [PREVIOUSLY COMPLETED] Transcreated complete website copy avoiding cheap slang and utilizing professional IT terminology like "Ръчно писан код" and "Възвръщаемост на инвестицията".
+
+**📏 UI Adaptation:**
+- [NEW] Replaced all occurrences of `rgb(255, 255, 255)` with Hex code `#FFFFFF` in `Design.css`, ensuring strict adherence to the 60-30-10 Koda Studio color rule aesthetic (Void Black `#000000`, Clean White `#FFFFFF`, and Koda Cyan `#4DB2C1`).
+- [PREVIOUSLY COMPLETED] Adjusted layouts utilizing CSS `clamp()` properties to gracefully handle the 20-30% expansion of Cyrillic text.
+
+**⚠️ Integrity Checks:**
+- Cyrillic font subset loaded successfully: [Pass]
+- Hreflang SEO tags implemented: [Pass]
+- Zero layout breaks on mobile for BG language: [Pass]
+
 ## [Date: 2026-06-20] - Localization & Copywriting Engine
 
 **🌐 i18n Architecture:**
