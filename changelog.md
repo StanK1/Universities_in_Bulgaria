@@ -1,3 +1,25 @@
+## [Date: 2026-11-11] - Localization & Copywriting Engine
+
+**🌐 i18n Architecture:**
+- [PREVIOUSLY COMPLETED] Implemented a zero-flicker client-side routing and state management system using `localStorage` and dynamic CSS display logic.
+- [PREVIOUSLY COMPLETED] Embedded an elegant 'EN / BG' language toggle into the global navigation bar, leveraging Koda Cyan (`#4DB2C1`) for active state indications.
+- [PREVIOUSLY COMPLETED] SEO Integrity secured by dynamically injecting `<link rel="alternate" hreflang="en/bg">` tags based on active locale.
+
+**✍️ Copywriting & Transcreation:**
+- [NEW] Applied incremental transcreation improvements to `varna.html`, updating English copy to "We engineer high performance marine and economic digital platforms" and corresponding Bulgarian copy to "морски и икономически дигитални платформи" to perfectly match the 'Executive Tech' tone.
+- [PREVIOUSLY COMPLETED] Masterfully transcreated all structural content across `index.html`, `sofia.html`, `plovdiv.html`, `varna.html`, and `baloobrazuvane.html` into B2B Executive Tech Bulgarian (utilizing professional IT terminology like "Изграждаме дигитална инфраструктура", "Ръчно писан код", "Висока производителност", and "Възвръщаемост на инвестицията").
+- [PREVIOUSLY COMPLETED] Refined the English copy cutting fluff and substituting passive tones with active, powerful executive verbs (e.g., "We engineer digital platforms").
+
+**📏 UI Adaptation:**
+- [NEW] Updated `Design.css` to change fixed heights (`height: 430px;`) to `min-height: 430px; height: auto;` for `.box` and `.box-2` containers, ensuring dynamic expansion for longer Cyrillic text without breaking layouts.
+- [PREVIOUSLY COMPLETED] Adapted container paddings and scaled responsive font metrics utilizing `clamp()` within `Design.css` to accommodate the 20-30% character expansion intrinsic to Cyrillic script, avoiding orphan words and overflow.
+- [PREVIOUSLY COMPLETED] Maintained the strict 60-30-10 absolute color rule (Void Black `#000000`, Clean White `#FFFFFF`, Koda Cyan `#4DB2C1`).
+
+**⚠️ Integrity Checks:**
+- Cyrillic font subset loaded successfully: [Pass]
+- Hreflang SEO tags implemented: [Pass]
+- Zero layout breaks on mobile for BG language: [Pass]
+
 ## [Date: 2026-06-20] - Localization & Copywriting Engine
 
 **🌐 i18n Architecture:**
